@@ -1,0 +1,194 @@
+<?php
+/*
+This file is part of a template, which was created by Torsten Behrens.
+Take a modern CMSimple  version. www.cmsimple.org www.cmsimple.org www.cmsimple.me www.cmsimple.org
+
+Version 16022014 or later. Update for jQuery4CMSimple. 
+##################################################################################
+# Dies ist ein kostenpflichtiges Template von Torsten Behrens.                   #
+# Torsten Behrens                                                                #
+# Dorfstraße 2                                                                   #
+# D-24619 Tarbek                                                                 #
+# USt.ID-Nr. DE214080613                                                         #
+# http://torsten-behrens.de                                                      #
+# http://tbis.info                                                               #
+# http://tbis.net                                                                #
+# http://cmsimple-templates.de                                                   #
+# http://cmsimple-templates.com                                                  #
+##################################################################################
+*/
+include ($pth['folder']['template'].'tb_toc.php'); 
+include ($pth['folder']['template'].'tbsuchen.php');
+
+ 
+
+?>
+
+
+<?php
+// if jQuery4CMSimple is installed, include its jQuery library
+if (is_readable($pth['folder']['plugins'].'jquery/jquery.inc.php')) {
+    include_once $pth['folder']['plugins'].'jquery/jquery.inc.php';
+    include_jQuery();
+}
+?>
+<!DOCTYPE html>
+
+
+<head><link rel="shortcut icon" href="favicon.ico" >
+
+    
+    <meta name="viewport" content="initial-scale = 1.0, maximum-scale = 1.0, user-scalable = no, width = device-width">
+    
+
+
+<?php echo head();?>
+	<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<link rel="stylesheet" href="<?php echo $pth['folder']['template'];?>style.css" media="screen">
+	<!--[if lte IE 7]><link rel="stylesheet" href="<?php echo $pth['folder']['template'];?>style.ie7.css" media="screen" /><![endif]-->
+	<link rel="stylesheet" href="<?php echo $pth['folder']['template'];?>style.responsive.css" media="all">	
+	
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu&amp;subset=latin">
+ 		
+    <script type="text/javascript" src="<?php echo $pth['folder']['template'];?>script.js"></script>
+        <script type="text/javascript" src="<?php echo $pth['folder']['template'];?>script.responsive.js"></script>
+        
+        
+        
+       
+
+<style>.tbis-content .tbis-postcontent-0 .layout-item-old-0 { border-top-width:1px;border-top-style:dotted;border-top-color:#CED1B8;margin-top: 10px;margin-bottom: 10px;  }
+.tbis-content .tbis-postcontent-0 .layout-item-old-1 { padding-right: 10px;padding-left: 10px;  }
+.tbis-content .tbis-postcontent-0 .layout-item-old-2 { border-right-style:dotted;border-right-width:1px;border-right-color:#CED1B8; padding-right: 10px;padding-left: 10px;  }
+.ie7 .tbis-post .tbis-layout-cell {border:none !important; padding:0 !important; }
+.ie6 .tbis-post .tbis-layout-cell {border:none !important; padding:0 !important; }
+
+</style>
+        
+  
+        
+        
+    
+    </head>
+    
+    
+    
+<body id="body" <?php echo onload();?>>
+
+
+
+
+
+
+ <div id="tbis-main">
+    <div class="tbis-sheet clearfix">
+<nav class="tbis-nav">
+                	  <?php echo tb_li_h($hc, 'menulevel', 'tbis');?>                
+    </nav>
+<header class="tbis-header">
+    
+
+
+
+    <div class="tbis-shapes">
+        <div class="tbis-textblock tbis-object1316593646">
+        <div class="tbis-object1316593646-text-container">
+
+    </div>
+     <marquee width="100%" behavior= "scroll" direction= "left" scrollamount= "10"><font color="#000000" size="+2">Selamat datang di website kami '<?php echo sitename()?>'</font></marquee>
+
+  
+
+
+</div>
+
+            </div>
+
+
+
+
+
+
+                
+                    
+</header>
+
+<div class="tbis-layout-wrapper">
+                <div class="tbis-content-layout">
+                    <div class="tbis-content-layout-row">
+                        <div class="tbis-layout-cell tbis-sidebar1"><div class="tbis-vmenublock clearfix">
+        <div class="tbis-vmenublockcontent">
+                                              <?php echo tb_toc(NULL, NULL, 'tb_li_v', 'tbis');?>
+                
+        </div>
+
+
+</div><div class="tbis-block clearfix">
+        <div class="tbis-blockcontent"><div>
+                                     	                              <?php echo tbsuchen();?>
+
+</div></div>
+</div><div class="tbis-block clearfix">
+        <div class="tbis-blockcontent">                                        <?php echo newsbox('News01');?> 
+</div>
+</div><div class="tbis-block clearfix">
+        <div class="tbis-blockcontent"></div>
+</div></div>
+                        <div class="tbis-layout-cell tbis-content"><article class="tbis-post tbis-article">
+                                
+                                <div class="tbis-postcontent tbis-postcontent-0 clearfix"><div class="tbis-content-layout">
+    <div class="tbis-content-layout-row">
+    <div class="tbis-layout-cell layout-item-old-1" style="width: 100%" >
+        
+            <?php echo editmenu();?>
+            <?php echo content();?>
+            <?php echo submenu();?>
+    </div>
+    </div>
+</div>
+</div>
+
+
+</article><div class="tbis-block clearfix">
+        <div class="tbis-blockcontent">                                   
+</p></div>
+</div></div>
+                        <div class="tbis-layout-cell tbis-sidebar2"><div class="tbis-block clearfix">
+        <div class="tbis-blockcontent"><div>
+                                          <?php echo newsbox('News02');?> 
+
+</div></div>
+</div><div class="tbis-block clearfix">
+        <div class="tbis-blockcontent"><div>
+                                          <?php echo newsbox('News03');?> 
+
+</div></div>
+</div> </div>
+                    </div>
+                </div>
+            </div><footer class="tbis-footer">
+<div class="tbis-content-layout-wrapper layout-item-0">
+<div class="tbis-content-layout">
+    <div class="tbis-content-layout-row">
+    <div class="tbis-layout-cell layout-item-1" style="width: 33%">
+         <!-- YOU ARE NOT ALLOWED TO REMOVE OR HIDE OR CHANGE THIS copyright LINK(s) -->
+<p><a href="http://torsten-behrens.de/">Torsten Behrens Webtemplatedesign</a><?php echo tag('br');?><a href="http://www.cmsimple.org">Powered by CMSimple</a></p>
+<!-- IF REMOVE OR HIDE OR CHANGE: Pay for a license - see http://torsten-behrens.de/?Preise   -->
+    </div><div class="tbis-layout-cell layout-item-1" style="width: 34%">
+<p>Copyright &copy;  1997-<?php echo date("Y"); ?> | <?php echo date("d.m.Y"); ?></p>    </div><div class="tbis-layout-cell layout-item-2" style="width: 33%">
+<p><?php echo sitemaplink();?> | <?php echo loginlink();?> | <?php echo languagemenu();?> </p>
+  </div>
+    </div>
+</div>
+</div>
+
+</footer>
+
+    </div>
+    <p class="tbis-page-footer">
+        <span id="tbis-footnote-links"><?php echo previouspage();?> |	 <?php echo top();?> | <?php echo nextpage();?></span>
+    </p>
+</div>
+
+
+</body></html>

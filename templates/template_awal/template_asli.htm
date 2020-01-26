@@ -1,0 +1,247 @@
+<?php 
+//#########################################################
+// Number of h1 pages in 1 line of Menu
+// Anzahl der h1 Seiten in einer Zeile des Menüs
+
+$numberOfH1Pages = '5';
+
+//######################################################### 
+
+include_once($pth['folder']['template'] . 'templatefuncs/templatefuncs.php');
+include($pth['folder']['template'] . 'slimmenu/slimmenu.php'); 
+?>
+<!DOCTYPE html>
+
+<html lang="<?php echo $sl;?>">
+<head>
+<?php echo head();?>
+
+<style type="text/css">
+ul.slimmenu li {width: <?php echo str_replace(',','.',100/$numberOfH1Pages-0.11);?>%;}
+ul.slimmenu li:nth-child(<?php echo $numberOfH1Pages;?>n) ul li ul {left:-90%;}
+</style>
+
+<link rel="stylesheet" href="<?php echo $pth['folder']['template'];?>slimmenu/slimmenu.css" type="text/css">
+<script type="text/javascript" src="<?php echo $pth['folder']['template'];?>templatefuncs/scripts/smoothscroll.js">
+</script>
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=1">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="slide/w3.css">
+
+
+
+</head>
+
+<body id="body" <?php echo onload();?>>
+<!-- utf-8 check: äöüß -->
+
+<div id="top"><div id="TOP"></div></div>
+
+
+<!-- 
+############################################# 
+             HEADERS CONTAINER
+############################################# 
+<!-- SlimMenu -->
+<div class="w3-content w3-section" style="max-width:100%">
+ <marquee width="100%" behavior= "scroll" direction= "left" scrollamount= "10"><font color="#FFFFFF"><strong>Selamat datang di website kami '<?php echo sitename()?>'</strong></font></marquee>
+
+  <img class="mySlides w3-animate-fading" src="userfiles/images/1.jpg?cache=none" style="width:100%">
+  <img class="mySlides w3-animate-fading" src="userfiles/images/2.jpg?cache=none" style="width:100%">
+  <img class="mySlides w3-animate-fading" src="userfiles/images/3.jpg?cache=none" style="width:100%">
+
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 5000);    
+}
+</script>
+
+
+	
+	
+
+
+
+	<div id="tplge_slimmenu" class="tplge_slimmenu">
+	<div id="tplge_slimmenuin" class="tplge_slimmenuin">
+
+<?php echo tocSlimMenu(); ?>
+
+	<div class="tplge_clearBoth"></div>
+	</div>
+	<div class="tplge_clearBoth"></div>
+	</div>
+	<div class="tplge_clearBoth"></div>
+
+
+<!-- Image Header -->
+
+	
+
+
+
+	</div>
+	</div>
+
+
+<!-- END HEADERS CONTAINER -->
+
+</div>
+
+
+
+
+
+<!-- 
+############################################# 
+             CONTENTS CONTAINER
+############################################# 
+-->
+
+<div id="tplge_contents" class="tplge_contents">
+
+<!-- locator -->
+	<div class="tplge_locator">
+<span class="locator_text"><?php echo $tx['locator']['text']; ?></span><?php echo locator();?>
+	</div>
+
+
+
+<!-- CONTENT -->
+
+	<div id="tplge_content" class="tplge_content">
+
+		<div class="tplge_searchboxContainer">
+<?php echo str_replace('class="submit" value="' . $tx['search']['button'],'class="submit" title="' . $tx['search']['button'] . '" value="&nbsp;&nbsp;',searchbox());?>
+<div class="tplge_clearBoth"></div>
+		</div>
+
+	<div id="tplge_contentin" class="tplge_contentin">
+
+<?php echo content();?>
+
+		<div id="tplge_prevtopnext" class="tplge_prevtopnext">
+
+<span><?php echo previouspage('prev.gif');?></span>
+<span><?php echo top('top.gif');?></span>
+<span><?php echo nextpage('next.gif');?></span>
+
+		</div>
+
+			<div id="tplge_icons" class="tplge_icons">
+<?php echo tf_homelink('homelink.gif'); ?>
+<?php echo tf_printlink('printlink.gif'); ?>
+<?php echo tf_mailformlink('mailformlink.gif'); ?>
+<?php echo tf_sitemaplink('sitemaplink.gif'); ?>
+			</div>
+
+<!-- END CONTENT --> 
+
+	<div class="tplge_clearBoth"></div>
+	</div>
+	</div>
+
+
+
+<!-- END CONTENTS CONTAINER -->
+
+</div>
+
+
+
+
+
+<!-- 
+############################################# 
+            FOOTERS CONTAINER
+############################################# 
+-->
+
+<div id="tplge_footers" class="tplge_footers">
+
+
+<!-- NEWSBOXES -->
+
+	<div id="tplge_newsArea" class="tplge_newsArea">
+
+	<div class="newsbox">
+<?php echo newsbox('News01');?>
+	<div class="tplge_clearBoth"></div>
+	</div>
+
+	<div class="newsbox">
+<?php echo newsbox('News02');?>
+	<div class="tplge_clearBoth"></div>
+	</div>
+	
+	<div class="newsbox">
+<?php echo newsbox('News03');?>
+	<div class="tplge_clearBoth"></div>
+	</div>
+	
+
+	<div class="tplge_clearBoth"></div>
+	</div>
+
+
+
+<!-- FOOTER LINKS -->
+
+	<div id="tplge_notes" class="tplge_notes">
+<p>
+Powered by <a href="http://www.cmsimple.org/">CMSimple</a> | 
+Template: <a href="http://www.ge-webdesign.de/">ge-webdesign.de</a> | 
+
+<?php 
+if($adm && !$edit)
+{
+echo '<a href="http://validator.w3.org/check?uri=referer">html5</a> | 
+<a href="http://jigsaw.w3.org/css-validator/check/referer">css</a> | ';
+}
+?>
+
+</p>
+
+	<div class="tplge_clearBoth"></div>
+	</div>
+
+
+
+<!-- END FOOTERS CONTAINER -->
+
+</div>
+
+<!-- SlimMenu jQuery Code -->
+<?php echo slimmenuBottom();?>
+
+<!-- scroll up to top button -->
+
+<?php echo '<div id="tplge_up" class="tplge_up"><a href="#top"><img src="' . $pth['folder']['templateimages'] . 'top.png" title="top" alt="nach oben"></a></div>'; ?>
+
+<script>
+window.onscroll = function() {
+	tplge_up.style.display = ((window.pageYOffset || document.documentElement.scrollTop) > 200) ? 'block' : 'none';
+    tplge_up.style.opacity = ((window.pageYOffset || document.documentElement.scrollTop) > 200) ? '0.75' : '0';
+};
+tplge_up.style.display = 'none';
+tplge_up.style.opacity = '0';
+</script>
+
+</body>
+</html>

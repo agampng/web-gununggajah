@@ -1,0 +1,295 @@
+﻿<?php include_once($pth['folder']['template'] . 'templatefuncs/templatefuncs.php');?>
+<!DOCTYPE html>
+
+<html>
+<head>
+<?php echo head();?>
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=1">
+
+<link rel="stylesheet" href="slide/w3.css">
+
+</head>
+
+<body id="body" <?php echo onload();?>>
+<!-- utf-8 check: äöüß -->
+<div id="top"></div>
+
+
+
+
+
+<!-- 
+############################################# 
+            HEADERs CONTAINER
+############################################# 
+-->
+<div class="w3-content w3-section" style="max-width:100%">
+
+ <marquee width="100%" behavior= "scroll" direction= "left" scrollamount= "10"><font color="#00000"><strong>Selamat datang di website kami '<?php echo sitename()?>'</strong></font></marquee>
+
+    <img class="mySlides w3-animate-right" src="userfiles/images/1.jpg?cache=none" style="width:100%">
+  <img class="mySlides w3-animate-left" src="userfiles/images/2.jpg?cache=none" style="width:100%">
+  <img class="mySlides w3-animate-right" src="userfiles/images/3.jpg?cache=none" style="width:100%">
+
+</div>
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 5000);    
+}
+</script>
+
+
+
+
+<div id="tplge_headersContainer" class="tplge_headersContainer">
+
+<!-- HEADER -->
+
+
+
+<!-- END HEADER -->
+
+
+	
+
+
+
+
+
+
+<!-- 
+############################################# 
+            SITE CONTAINER
+############################################# 
+-->
+
+<div id="tplge_siteContainer" class="tplge_siteContainer">
+
+
+
+
+
+<!-- 
+############################################# 
+            CONTENTS CONTAINER
+############################################# 
+-->
+
+	<div id="tplge_contentsContainer" class="tplge_contentsContainer">
+
+
+
+
+
+<!-- CONTENT -->
+
+		<div id="tplge_content" class="tplge_content">
+
+<div id="tplge_content_anchor" class="tplge_content_anchor tplge_navintern">
+<div class="tplge_button"><?php echo tf_top('top_red.gif');?></div>
+<div class="tplge_button_active"><?php echo $tx['menu']['page_content']; ?></div>
+<a href="#tplge_menu_anchor"><div class="tplge_button"><?php echo $tx['menu']['main_menu']; ?></div></a>
+<a href="#tplge_news_anchor"><div class="tplge_button"><?php echo $tx['menu']['news_area']; ?></div></a>
+<div class="tplge_clearBoth"></div>
+</div>
+
+
+			<div id="tplge_contentin" class="tplge_contentin">
+
+<?php echo editmenu();?>
+<?php echo content();?>
+<div class="tplge_submenu">
+<?php echo submenu();?>
+</div>
+
+				<div id="tplge_prevtopnext">
+				<div id="tplge_prevtopnextin">
+<span><?php echo tf_previouspage('prev.gif');?></span>
+<span><?php echo tf_top('top.gif');?></span>
+<span><?php echo tf_nextpage('next.gif');?></span>
+<div class="tplge_clearBoth"></div>
+				</div>
+				<div class="tplge_clearBoth"></div>
+				</div>
+
+			<div class="tplge_clearBoth"></div>
+			</div>
+
+<!-- END CONTENT -->
+
+		</div>
+
+
+
+
+
+<div id="tplge_news_anchor" class="tplge_news_anchor tplge_navintern">
+<div class="tplge_button"><?php echo tf_top('top_red.gif');?></div>
+<a href="#tplge_content_anchor"><div class="tplge_button"><?php echo $tx['menu']['page_content']; ?></div></a>
+<a href="#tplge_menu_anchor"><div class="tplge_button"><?php echo $tx['menu']['main_menu']; ?></div></a>
+<div class="tplge_button_active"><?php echo $tx['menu']['news_area']; ?></div>
+<div class="tplge_clearBoth"></div>
+</div>
+
+
+
+
+
+<!-- SIDEBAR NEWS -->
+
+		<div id="tplge_newsContainer" class="tplge_newsContainer">
+
+			<div class="tplge_news">
+			<div class="tplge_newsin">
+<?php echo newsbox('News02');?>
+			<div class="tplge_clearBoth"></div>
+			</div>
+			<div class="tplge_clearBoth"></div>
+			</div>
+			
+			<div class="tplge_news">
+			<div class="tplge_newsin">
+<?php echo newsbox('News03');?>
+			<div class="tplge_clearBoth"></div>
+			</div>
+			<div class="tplge_clearBoth"></div>
+			</div>
+			<div class="tplge_clearBoth"></div>
+			
+		</div>
+
+
+
+
+
+<!-- END CONTENTS CONTAINER --> 
+
+		<div class="tplge_clearBoth"></div>
+		</div>
+
+
+
+
+
+<div id="tplge_menu_anchor" class="tplge_menu_anchor tplge_navintern">
+<div class="tplge_button"><?php echo tf_top('top_red.gif');?></div>
+<a href="#tplge_content_anchor"><div class="tplge_button"><?php echo $tx['menu']['page_content']; ?></div></a>
+<div class="tplge_button_active"><?php echo $tx['menu']['main_menu']; ?></div>
+<a href="#tplge_news_anchor"><div class="tplge_button"><?php echo $tx['menu']['news_area']; ?></div></a>
+<div class="tplge_clearBoth"></div>
+</div>
+
+
+
+
+
+<!-- 
+############################################# 
+           SIDEBAR NAV CONTAINER
+############################################# 
+-->
+
+		<div id="tplge_sidebarNav" class="tplge_sidebarNav">
+		<div id="tplge_sidebarNavin" class="tplge_sidebarNavin">
+
+		
+
+<!-- searchbox -->
+<div class="tplge_searchboxContainer">
+<?php echo str_replace('class="submit" value="' . $tx['search']['button'],'class="submit" title="' . $tx['search']['button'] . '" value="&nbsp;&nbsp;',searchbox());?>
+<div class="tplge_clearBoth"></div>
+</div>
+
+<?php echo toc();?>
+
+		<div id="tplge_icons" class="tplge_icons">
+<?php echo tf_homelink('homelink.gif'); ?>
+<?php echo tf_printlink('printlink.gif'); ?>
+<?php echo tf_mailformlink('mailformlink.gif'); ?>
+<?php echo tf_sitemaplink('sitemaplink.gif'); ?>
+		</div>
+		
+<div style="clear: both;"> </div>
+
+	<div class="tplge_news">
+			<div class="tplge_newsin">
+<?php echo newsbox('News01');?>
+			<div class="tplge_clearBoth"></div>
+			</div>
+			<div class="tplge_clearBoth"></div>
+			</div>
+
+<!-- END SIDEBAR NAV -->
+
+		<div class="tplge_clearBoth"></div>
+		</div>
+		<div class="tplge_clearBoth"></div>
+		</div>
+
+
+
+
+
+<div class="tplge_news_anchor_bottom tplge_navintern">
+<div class="tplge_button"><?php echo tf_top('top_red.gif');?></div>
+<a href="#tplge_content_anchor"><div class="tplge_button"><?php echo $tx['menu']['page_content']; ?></div></a>
+<a href="#tplge_menu_anchor"><div class="tplge_button"><?php echo $tx['menu']['main_menu']; ?></div></a>
+<a href="#tplge_news_anchor"><div class="tplge_button"><?php echo $tx['menu']['news_area']; ?></div></a>
+<div class="tplge_clearBoth"></div>
+</div>
+
+
+
+<!-- END Site CONTAINER -->
+
+<div class="tplge_clearBoth"></div>
+</div>
+
+
+
+
+
+<!-- 
+############################################# 
+            FOOTERS CONTAINER
+############################################# 
+-->
+
+<div id="tplge_footersContainer" class="tplge_footersContainer">
+
+
+
+<!-- FOOTER LINKS -->
+
+	<div id="tplge_notes" class="tplge_notes">
+	<div id="tplge_notesin" class="tplge_notesin">
+<p>
+Powered by <a href="http://www.cmsimple.org/en/">CMSimple</a> 
+
+</p>
+
+	<div class="tplge_clearBoth"></div>
+	</div>
+	</div>
+
+<!-- END FOOTERS -->
+
+
+
+
+
+</div>
+
+</body>
+</html>

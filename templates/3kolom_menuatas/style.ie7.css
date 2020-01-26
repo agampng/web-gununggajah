@@ -1,0 +1,164 @@
+/* Torsten Behrens Webtemplatedesign - 2014 */
+
+.tbis-header, #tbis-header-bg, .tbis-layout-cell, .tbis-layout-wrapper, .tbis-footer, .tbis-nav, #tbis-hmenu-bg, .tbis-sheet,
+.clearfix {
+   zoom: expression(this.runtimeStyle.zoom="1", this.appendChild(document.createElement("br")).className="cleared");
+}
+
+.tbis-textblock > div {
+   display: block;
+   line-height: normal;
+   zoom: 1;
+}
+
+.tbis-hmenu>li, .tbis-hmenu>li>a
+{
+   display: inline !important;
+   zoom: 1;
+   float: none !important;
+   vertical-align: top;
+}
+ul.tbis-hmenu, ul.tbis-hmenu ul {
+   zoom: expression(this.runtimeStyle.zoom="1", this.appendChild(document.createElement("br")).className="cleared");
+}
+#tbis-hmenu-bg 
+{
+   display: none;
+}
+
+ul.tbis-hmenu>li:first-child {
+   padding-right:0;
+}
+
+ul.tbis-hmenu ul, .desktop-nav ul.tbis-hmenu>li.ext:hover>a{
+   background-color: #7B6F4C !important;
+}
+
+.tbis-header
+{
+   z-index: 1;
+   background-image: [headerimage];
+   background-position: [headerposition];
+}
+
+#tbis-header-bg 
+{
+   display: none;
+}
+
+.tbis-content-layout, .tbis-content-layout-row, .tbis-layout-cell 
+{
+   display: block;
+   zoom: 1;
+}
+.tbis-layout-cell
+{
+   position:relative;
+   float: left;
+   clear: right;
+}
+
+ul.tbis-vmenu, ul.tbis-vmenu ul, ul.tbis-vmenu li{
+   zoom: 1;
+}
+
+ul.tbis-vmenu ul 
+{
+   background-color: #49412D;
+}
+
+input[type="text"]
+{
+   margin:0 0 0 -3px;
+   zoom:expression(runtimeStyle.zoom = 1, parentNode.insertBefore(document.createElement('div'), this).appendChild(this));
+}
+
+* html input[type="text"]
+{
+   margin :0;
+}
+
+form.tbis-search>input[type="text"]
+{
+   margin:0 0 0 -3px;
+   zoom:expression(runtimeStyle.zoom = 1, parentNode.insertBefore(document.createElement('div'), this).appendChild(this));
+}
+
+form.tbis-search div>input[type="text"]
+{
+   width: 100%;
+}
+
+* html form.tbis-search>input[type="text"] 
+{
+   margin :0;
+}
+
+form.tbis-search
+{
+   zoom: 1;
+}
+.tbis-postmetadataheader{
+   zoom:1;
+}
+
+.tbis-postheadericons span{
+   zoom: 1;
+}
+.tbis-postcontent {
+   height: 1%;
+}
+
+.close-alt, .arrow-right-alt, .arrow-left-alt {
+   display: block !important;
+}
+.cw, .ccw {
+   display: none !important;
+}
+
+.tbis-sidebar1
+{
+   background: none !important;
+   border: none !important;
+   zoom:expression(runtimeStyle.zoom=1, parentNode.parentNode.insertBefore(document.createElement('div'),parentNode.parentNode.firstChild).className='tbis-sidebar1-bg' + (className.indexOf('tbis-sidebar1-fix') == -1 ? '' : ' tbis-sidebar1-bg-fix' ));
+}
+
+.tbis-sidebar1-bg 
+{
+   border-right:1px solid #7B6F4C;
+   position:absolute;
+   z-index:-2;
+   direction: ltr;
+   left:  0;
+   bottom:0;
+   top:0;
+   width: 200px;
+   overflow:hidden;
+   display:block;
+   background-color: #49412D;
+}
+
+.tbis-sidebar2 
+{
+   width: auto;
+   float:none;
+   background: none !important;
+   border: none !important;
+   zoom:expression(runtimeStyle.zoom=1, parentNode.parentNode.insertBefore(document.createElement('div'),parentNode.parentNode.firstChild).className='tbis-sidebar2-bg' + (className.indexOf('tbis-sidebar2-fix') == -1 ? '' : ' tbis-sidebar2-bg-fix' ));
+}
+
+.tbis-sidebar2-bg 
+{
+   border-left:1px solid #7B6F4C;
+   position:absolute;
+   z-index:-2;
+   direction: ltr;
+   right:  0;
+   bottom:0;
+   top:0;
+   width: 200px;
+   overflow:hidden;
+   display:block;
+   background-color: #49412D;
+}
+

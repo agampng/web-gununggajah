@@ -1,0 +1,60 @@
+LEGEND
+type=html|text=<p><span class="required">*</span> = Pflichtfeld (mandatory field)</p><hr>
+
+RECIPIENTS / EMPFÄNGER
+type=html|text=<p class="ddmf_between">Empfänger wählen:</p>
+type=selrecip|class=ddmf_select|label=Empfänger:|data=Bitte wählen Sie:,ge-webdesign,mail@ge-webdesign.de,CMSimple,mail@cmsimple.org
+
+FIELDSET open
+type=openfieldset|legend=Persönliches
+
+INPUT fields
+type=text|class=ddmf_text|label=Name:|fieldname=ddmf_sender_name|max=250|req=true
+type=text|class=ddmf_text|label=Email:|fieldname=ddmf_sender_email|max=250|req=true|ver=email
+type=text|class=ddmf_text|label=Website:|fieldname=ddmf_website|max=256|ver=url
+type=text|class=ddmf_text|label=Telefon:|fieldname=ddmf_phone|max=250
+
+FIELDSET close
+type=closefieldset
+
+SELECTBOX
+type=html|text=<p class="ddmf_between">Einfache Selectbox:</p>
+type=select|class=ddmf_select|label=Alter:|fieldname=ddmf_selectage|data=keine Angabe,0-30,31-60,61-90,91-120
+
+RADIO BUTTONS
+type=html|text=<p class="ddmf_between">Radiobuttons:</p>
+type=radio|class=ddmf_radio|label=Alter:|fieldname=ddmf_radioage|data=keine Angabe,0-30,31-60,61-90,91-120|default=1
+
+SELECTBOXES specials
+type=html|text=<p class="ddmf_between">Selectbox, Mehrfachauswahl mit Ctrl (Strg) möglich:</p>
+type=select|class=ddmf_select|label=Kataloge:|fieldname=ddmf_mfa|multi=true|data=Gesamtkatalog,Desktop Computer,Notebooks,Tablets,Smartphones
+
+type=html|text=<p class="ddmf_between">Selectbox mit Kategorien:</p>
+type=select|class=ddmf_select|label=Kategorien:|fieldname=ddmf_choose|data=#Kategorie 1,Auswahl 1.1,Auswahl 1.2,#Kategorie 2,Auswahl 2.1,Auswahl 2.2
+
+CHECKBOX
+type=html|text=<p class="ddmf_between">Gruppe von Checkboxen:</p>
+type=checkbox|class=ddmf_check|label=Interessen:|data=ddmf_checkbox1_fieldname1,Computer,false,false,ddmf_checkbox1_fieldname2,Smartphones,false,false,ddmf_checkbox1_fieldname3,andere,false,false
+
+DATEPICKER
+type=html|text=<p class="ddmf_between">Datum per Datepicker auswählen:</p>
+type=date|class=ddmf_date|label=Wunschtermin:|fieldname=ddmf_termin
+type=date|class=ddmf_date|label=Ersatztermin:|fieldname=ddmf_ersatztermin
+
+TEXTAREAS
+type=html|text=<p class="ddmf_between">Breite Textarea:</p>
+type=widetextarea|class=ddmf_textwide|label=Ihre Nachricht:|fieldname=ddmf_message1|max=5000|rows=6|req=true
+type=html|text=<p class="ddmf_between">Schmale Textarea (für zweispaltiges Layout):</p>
+type=textarea|class=ddmf_text|label=Ihre Nachricht:|fieldname=ddmf_message2|max=5000|rows=6
+
+E-MAIL ATTACHMENT (file)
+type=html|text=<p class="ddmf_between">Datei anhängen:</p>
+type=file|class=ddmf_file|fieldname=ddmf_file_attach
+
+CHECKBOX CONFIRM
+type=html|text=<p class="ddmf_between">Checkbox - Bestätigung:</p><p><a href="http://www.cmsimple.org" target="_blank">AGB lesen »</a> (neues Fenster oder Tab)</p>
+type=checkbox|class=ddmf_check|label=AGB bestätigen:|data=ddmf_agb,Ich akzeptiere die AGB,false,true
+
+CAPTCHA SPAM PROTECTION
+type=html|text=<p class="ddmf_between">Spamschutz Captcha:</p>
+type=verify|class=ddmf_verify|label=Spamschutz:

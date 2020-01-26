@@ -1,0 +1,226 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<title>MailForms Kurzdoku</title>
+<meta name="content-language" content="de">
+<style type="text/css">
+body {font-family: arial, sans-serif; font-size: 15px;}
+h1, h2 {font-size: 24px; color: #720; padding-top: 24px;}
+h3 {font-size: 20px; color: #000; padding-top: 16px;}
+div#main {width: 950px; padding: 20px;}
+p {line-height: 20px;}
+p.code {font-family: Courier New; font-size: 14px; border: 1px solid #999; background: #e6e6e0; padding: 8px 12px;}
+span.code {font-family: Courier New;}
+td {border: 1px solid; padding: 8px 12px;}
+li {padding-top: 5px; padding-bottom: 5px;}
+a:link, a:visited {color: #249;}
+a:hover {color: #c60;}
+</style>
+</head>
+
+
+
+<body>
+<!-- utf-8 check: äöüß -->
+
+<div id="main">
+<p style="font-size: 24px;"><a href="http://translate.google.de/" target="_blank">Google translator &raquo;</a></p>
+<p>(Opens in a new window - öffnet in einem neuen Fenster)</p><hr>
+<h1>Kurz-Dokumentation Plugin "MailForms"</h1>
+<p><b><i>Version MailForms 1.6</i></b> - released 02/2016</p>
+
+<h3>Kurzbeschreibung</h3>
+<p>Mit dem CMSimple Plugin <b>MailForms</b> können Sie beliebig viele E-mail Formulare auf Ihrer CMSimple Seite betreiben.</p>
+<p>Die Formulare können Online erstellt und bearbeitet werden.</p>
+<p>Da an jeder beliebigen Stelle der Formulare html-Elemente eingfügt werden können, ist jedes einzelne Formular mit ein wenig Grundwissen in html und CSS individuell stylebar.</p>
+<p><b>MailForms</b> ist somit ein starkes Werkzeug für Webdesigner und Agenturen zur Gestaltung individueller E-mail Formulare nach den Vorgaben und Wünschen ihrer Kunden und Auftraggeber.</p>
+<hr>
+
+
+
+
+
+<h2>1. Systemvoraussetzungen</h2>
+<p>Voraussetzung ist eine funktionierende Installation von CMSimple 4.2 oder höher.</p>
+<p><b>Empfohlen wird CMSimple 4.4 oder höher.</b></p>
+<hr>
+
+
+
+
+
+<h2>2. Installation</h2>
+<ol>
+    <li>zip-Datei herunterladen und mit einem geeigneten Programm entpacken</li>
+    <li>
+		<ul>
+		<li>Laden Sie die komplette Ordner-Struktur des Verzeichnisses "CMSimpleRoot" (die Verzeichnisse "plugins" und "content") in das Installationsverzeichnis von CMSimple hoch.</li>
+		<li>Ihr ftp Programm wird merken, dass es diese Verzeichnisse bereits gibt, und Sie fragen, ob Sie das wirklich tun wollen. Beantworten Sie diese Frage einfach mit "ja", "ok" oder was immer Ihr ftp Programm anbietet.</li>
+		<li>Bei einem Update laden Sie einfach das Verzeichnis "content" nicht mit hoch.</li>
+		</ul>
+	</li>
+    <li>Vergeben mit Ihrem ftp-Programm die erforderlichen Lese- und Schreibrechte für Ordner und Dateien.</li>
+</ol>
+
+<h3>Subsites und Zweitsprachen</h3>
+
+<p style="background: #fc0; border: 3px solid #000; padding: 6px 12px;">Für den Einsatz von MailForms in Subsites und Zweitsprachen muss die Struktur des content-Ordners aus dem Download in den content-Ordner der entsprechenden Subsite oder Zweitsprache übertragen und evtl. die entsprechenden Datei- und Ordnerrechte vergeben werden.</p>
+<p>Das ist notwendig, weil MailForms die Formulardateien grundsätzlich im eigenen content-Ordner sucht.</p>
+
+<hr>
+
+
+
+
+
+<h2>3. Datei- und Ordnerrechte</h2>
+<p>Damit das Programm funktioniert und arbeiten kann (bzw. administrierbar ist), müssen für bestimmte Dateien und Ordner bestimmte Schreib- und Leserechte vergeben werden.</p>
+
+
+
+<h3>Ordner (chmod 777)</h3>
+<ul>
+	<li><span style="font-family: Courier New;">./plugins/mailforms<strong>/languages/</strong></span></li>
+	<li><span style="font-family: Courier New;">./content/plugins<strong>/mailforms/</strong></span></li>
+</ul>
+
+
+<h3>Dateien (chmod 666)</h3>
+<ul>
+	<li><span style="font-family: Courier New;">./plugins/mailforms/config/<strong>config.php</strong></span></li>
+	<li><span style="font-family: Courier New;">./plugins/mailforms/css/<strong>stylesheet.css</strong></span></li>
+	<li><span style="font-family: Courier New;">./plugins/mailforms/languages/<strong>alle Dateien</strong></span></li>
+	<li><span style="font-family: Courier New;">./content/plugins/mailforms<strong>/alle Dateien</strong></span></li>
+</ul>
+<hr>
+
+
+
+
+
+<h2>4. Aufruf des Plugins</h2>
+
+
+
+<h3>4.1 Einfacher Plugin Aufruf</h3>
+
+<p>Das ist die Funktion, mit der das E-mail Formular aufgerufen wird:</p>
+<p class="code">{{{plugin:dd_mailform('Dateiname');}}}</p>
+<p><b>Dateiname:</b> Der Dateiname der Formular Datei (ohne Endung)</p>
+<p>Wenn die Schreibrechte korrekt gesetzt sind, erzeugt MailForms automatisch die .txt Datei mit dem angegebenen Dateinamen (aus der Vorlage default.txt). 
+<p>Es kann aber auch eine bereits existierende Formulardatei aufgerufen werden. Alle Formulardateien liegen im Verzeichnis<br>./content/plugins/mailforms/</p>
+
+
+
+<h3>4.2 Erweiterter Plugin Aufruf mit optionalen Parametern</h3>
+
+<p class="code">{{{plugin:dd_mailform('Dateiname','Empfänger','Kopie an Sender','Layout','Betreff');}}}</p>
+<p><b>Dateiname:</b> Der Dateiname der Formular Datei (ohne Endung)</p>
+<p><b>Empfänger (optional):</b> Die E-mail Adresse des Empfängers (überschreibt den Wert aus der Plugin Konfiguration) oder 'selrecip', wenn der entsprechende Feldtyp genutzt wird.</p>
+<p><b>Kopie an Sender (optional):</b> Voreingestellt ist "true" (Kopie der mail geht an den Absender), alles andere deaktiviert diese Funktion.</p>
+<p><b>Layout (optional):</b> '1col' (für einspaltig) oder '2cols' (für zweispaltig)</p>
+<p><b>Betreff (optional):</b> überschreibt den vom Plugin erzeugten Standard-Betreff in der E-mail</p>
+
+<p><b>Beispiel:</b></p>
+<p class="code">{{{plugin:dd_mailform('testformular','','true','2cols','MailForms Plugin - Testformular');}}}</p>
+<p>Dieses Beispiel lässt den Empfänger unverändert, eine Kopie der E-mail geht an den Absender. Das einspaltige Standard Layout wird auf '2cols' (zweispaltig) geändert. Erzeugt bzw. angezeigt wird die Formulardatei "testformular.txt".</p>
+
+
+
+
+
+<h2>5. Die Formulardateien</h2>
+
+
+
+<p style="background: #fc0; border: 3px solid #000; padding: 6px 12px;">Der Feldbezeichner (fieldname) des E-mail Feldes sollte immer "ddmf_sender_email" sein (so wie in den Vorlagedateien), da dieser für die Erstellung der E-mail als Antwort Adresse genutzt wird.</p>
+
+
+<h3>5.1 Die Struktur der Formulardateien</h3>
+
+<p>Jede Zeile, die gültige Syntax enthält, wird angezeigt. Eine Zeile = 1 Formularfeld</p>
+<p>Leerzeilen und Zeilen, die keine gültige Syntax enthalten, werden nicht angezeigt. So kann man die Formulardateien mit Leerzeilen und Kommentarzeilen gut lesbar strukturieren.</p>
+
+
+
+<h3>5.2 Die Syntax der Zeilen / Feldtypen</h3>
+
+<p>Die meisten Feldtypen setzen sich aus folgenden Parametern zusammen:</p>
+
+<ul>
+<li><b>type</b> – Der Feldtyp</li>
+<li><b>class</b> – Die CSS Klasse, muss in der stylesheet.css des Plugins enthalten sein.</li>
+<li><b>label</b> – Der Text zum Feld.</li>
+<li><b>fieldname</b> – Der technische Name des Feldes, jeder darf nur 1x pro Formular vorkommen.</li>
+<li><b>max</b> – (optional) Maximale Anzahl der Zeichen.</li>
+<li><b>req</b> – (optional) "true" erzeugt ein Pflichfeld.</li>
+<li><b>default</b> (optional) Standardwert des Feldes.</li>
+</ul>
+
+<p>Die Parameter sind durch einen senkrechten Strich getrennt.</p>
+<p><b>Beispiel:</b></p>
+<p class="code">type=text|class=fmtext|label=Name:|fieldname=ddmf_sender_name|max=100|req=true</p>
+<p>Mehr Informationen gibt es erst einmal nur auf Englisch auf <a href="http://www.dagondesign.com/articles/secure-php-form-mailer-script/#advancedform" target="_blank">www.dagondesign.com &raquo;</a> (neues Fenster / new window).</p>
+<p style="color: #900; font-weight: 700;">Die Übersetzung der wichtigsten und relevanten Teile dieser Dokumentation ist in Arbeit. Bis dahin finden Sie Beispiel Code für die meisten Feldtypen im Plugin Backend unterhalb der Textarea zur Bearbeitung der Formulare. Weiterhin wird ein Demo Formular "_demo.txt" mitgeliefert.</p>
+
+
+
+
+
+<h2>6. wichtige Sonderfälle</h2>
+
+
+<h3>6.1 type=text (einzeiliges Eingabefeld)</h3>
+
+<p>Mit dem optionalen Parameter "ver=..." können Sie Felder auf korrekte Eingabe prüfen, ansonsten wird beim abschicken des Formulars eine Fehlermeldung erzeugt.</p>
+<ul>
+<li><b>ver=email</b>: prüft, ob eine korrekte e-mail Adresse eingegeben wurde</li>
+<li><b>ver=url</b>: prüft, ob ein korrekter URL eingegeben wurde</li>
+</ul>
+
+<p>Die URL Verifikation prüft, ob ein URL tatsächlich existiert. Weitergeleitete Seiten und Umlaut Domains erzeugen eine Fehlermeldung. Deshalb empfehle ich, die URL Verifikation nicht zu nutzen.</p>
+
+
+
+<h3>6.2 type=selrecip (Selectbox "Empfänger wählen")</h3>
+
+<p>Dieser Feldtyp erzeugt eine Selectbox, mit der der Besucher zwischen mehreren Empfängern wählen kann. Im Plugin Aufruf muss bei Verwendung dieses Feldtyps im 2. Parameter (Empfänger) 'selrecip' eingetragen werden.</p>
+<p>Die Empfänger werden in einen Parameter "data=..." eingetragen. Der erste Eintrag ist der sichtbare Text, danach folgen abwechselnd, durch Kommata getrennt, ein Empfängername und die dazugehörige E-mail Adresse.</p>
+<p><b>Beispiel:</b></p>
+<p class="code">type=selrecip|class=fmselect|label=Empfänger:|data=Bitte wählen,User1,user1@domain.com,User2,user2@domain.com</p>
+<p>In der Selectbox werden die Empfängernamen angezeigt.</p>
+
+
+
+<h3>6.3 type=checkbox (Checkbox oder Gruppe von Checkboxen)</h3>
+
+<p>Die Syntax ist hier ein wenig anders, für die Definition der Checkboxen gibt es den Parameter "data=..."</p>
+<p>Dieser Parameter enthält eine Komma-separierte Liste, bei der jeweils 4 aufeinanderfolgende Einträge eine Checkbox bilden:</p>
+<p><b>Syntax:</b></p>
+<p class="code">...|data=fieldname,text,checked,required,fieldname,text,checked,required,fieldname,text,checked,required,...</p>
+<ul>
+<li><b>fieldname</b>: der "technische" Name der Checkbox, er muss eindeutig sein (darf nur 1x im gesamten Formular vorkommen)</li>
+<li><b>text</b>: der Text neben der Checkbox</li>
+<li><b>checked</b>: "true" aktiviert die Checkbox per default, "false" deaktiviert die Checkbox per default</li>
+<li><b>required</b>: "true" macht das aktivieren zur Pflicht, "false" nicht</li>
+</ul>
+<p><b>Beispiel:</b></p>
+<p class="code" style="overflow: scroll;">type=checkbox|class=ddmf_check|req=true|label=Wunschfarbe:|data=checkbox_farben_red,Rot,false,false,checkbox_farben_yellow,Gelb,false,false,checkbox_farben_blue,Blau,false,false</p>
+
+
+
+
+
+<h2>7. Danksagung</h2>
+
+<p><b>MailForms</b> basiert auf dem "Secure PHP Form Mailer Script" von <a href="http://www.dagondesign.com/articles/secure-php-form-mailer-script/" target="_blank">dagondesign.com &raquo;</a> (neues Fenster / new window).</p>
+<p>Vielen Dank für die bedingungslose Bereitstellung dieses Scriptes.</p>
+
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</div>
+</body>
+</html>

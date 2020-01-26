@@ -1,0 +1,609 @@
+/* 
+#########################################
+              OWN CSS
+#########################################
+place your own CSS here
+*/
+
+.ddfmwrap p.ddmf_between{
+width: 100%; 
+float: left; 
+font-weight: 700;
+}
+
+/* 
+#########################################
+           OUTPUT and WRAPPER
+#########################################
+*/
+
+.ddfmwrap {
+font-family: arial, sans-serif;
+padding: 0;
+margin: 0;
+}
+
+.ddfmwrap .required {
+font-family: verdana, sans-serif;
+color: #c00;
+font-weight: 700;
+}
+
+.ddfmwrap .ddfmerrors {
+display: block; 
+width: 100%; 
+text-align: left;
+font-weight: 700;
+margin: 0 10px 0 0; 
+padding-bottom: 15px;
+}
+
+.ddfmwrap .errorlist {
+display: block;
+width: 90%;
+border: 3px solid #c00;
+margin-bottom: 15px;  
+padding: 12px;
+text-align: left;
+}
+
+.ddfmwrap .recaptcha {
+width: 100%;
+text-align: right;
+clear: both; 
+height: 120px;
+margin-right: 7px;
+padding-bottom: 10px;
+}
+
+.ddfmwrap .recaptcha-inner {
+float: right;
+margin-right: 3px;
+}
+
+.ddfmwrap p.fieldwrap {
+width: 100%;
+float: left;
+padding: 0;
+margin: 0;
+}
+
+.ddmfMailSent {
+background: #060; 
+color: #fff; 
+font-weight: 700; 
+text-align: center; 
+border: 3px solid #fff; 
+padding: 6px 9px;
+}
+
+.ddfm_backToForm {
+text-align: center;
+font-weight: 700;
+}
+
+
+/* 
+#########################################
+              MAILFORM 1COL 
+#########################################
+*/
+
+form.ddmf1col {
+text-align: left;
+padding: 10px 0;
+}
+
+form.ddmf1col fieldset {
+float: left;
+border: 1px solid #999;
+border-radius: 5px;
+padding: 9px 16px;
+margin: 9px 0 16px 0;
+display: block;
+}
+
+form.ddmf1col legend {
+padding: 0 6px 0 6px;
+margin: 0 0 0 10px;	 
+}
+
+form.ddmf1col label {
+display: block; 
+float: left; 
+width: 90%; 
+text-align: left;
+line-height: 1em;
+margin: 4px 10px 4px 0; 
+padding-bottom: 0;
+clear: left; 
+}
+
+form.ddmf1col label.ddmf_textlblwide {
+display: block;  
+float: left; 
+text-align: left;
+margin: 0; 
+padding: 9px 0 4px 0; 
+width: 100%;
+}
+
+form.ddmf1col select.ddmf_select {
+float: left; 
+display: block;
+min-width: 160px; 
+max-width: 96%;
+margin-bottom: 9px;  
+padding: 3px; 
+}
+
+form.ddmf1col .ddmf_check {
+float: left;
+display: block;  
+margin-bottom: 9px;
+}
+
+form.ddmf1col .ddmf_checklabel {
+display: inline; 
+float: none; 
+clear: none; 
+text-align: left; 
+margin: 0; 
+padding: 0 0 0 6px;
+}
+
+form.ddmf1col .ddmf_radio {
+float: left;
+display: block;
+margin-bottom: 9px;
+}
+
+form.ddmf1col .ddmf_radiolabel {
+display: inline; 
+float: none; 
+clear: none; 
+text-align: left; 
+margin: 0; 
+padding: 0 0 0 6px;
+}
+
+form.ddmf1col .ddmf_check p {
+padding: 0;
+margin: 0 0 5px 0;
+}
+
+form.ddmf1col .ddmf_radio p {
+padding: 0;
+margin: 0 0 5px 0;
+line-height: 140%;
+}
+
+form.ddmf1col textarea {
+float: left; 
+position: relative;
+width: 96%;
+height: 200px;
+font-family: arial, sans-serif;
+font-size: 15px;
+margin: 0 0 15px 0;
+padding: 3px;
+}
+
+form.ddmf1col .ddmf_fullblock {
+padding-left: 0px;
+float: left; 
+width: 100%;
+margin-bottom: 13px;
+display: block;
+}
+
+form.ddmf1col .ddmf_halfblock {
+width: 60%;
+padding-left: 29%;
+margin-bottom: 13px;
+float: left; 
+display: block;
+}
+
+form.ddmf1col input.ddmf_verify {
+float: left; 
+width: 100px;
+font-family: arial, sans-serif;
+margin-bottom: 15px; 
+padding: 3px 4px;
+position: relative;
+display: block;
+}
+
+form.ddmf1col img {
+margin: 1px 0 0 10px; 
+float: left;
+}
+
+form.ddmf1col input.ddmf_file,
+form.ddmf1col input.ddmf_text {
+float: left; 
+display: block;
+min-width: 56%;
+font-family: arial, sans-serif;
+margin: 0 0 9px 0;  
+padding: 2px 4px;
+}
+
+form.ddmf1col input.ddmf_file {
+width: 96%;
+}
+
+form.ddmf1col input.ddmf_date {
+float: left; 
+display: block;
+width: 35%;
+font-family: arial, sans-serif;
+margin-bottom: 15px;  
+padding: 2px 4px;
+}
+
+form.ddmf1col textarea.ddmf_text {
+display: block;
+float: left;
+width: 56%;
+height: 200px;
+font-family: arial, sans-serif;
+margin: 0 0 15px 0; 
+padding: 3px;
+}
+
+form.ddmf1col textarea.ddmf_textwide {
+display: block;
+float: left;
+width: 96%;
+height: 200px;
+font-family: arial, sans-serif;
+margin: 0 0 15px 0; 
+padding: 3px;
+}
+
+form.ddmf1col .credits {
+text-align: right;
+margin-top: 7px;
+width: 97%;
+}
+
+form.ddmf1col div.submitButton {
+text-align: right;
+clear: both; 
+width: 97%;
+}
+
+form.ddmf1col div.submitButton input {
+background: #ccc url(button.jpg)!important;
+color: #333;
+border: 1px solid #999;
+border-radius: 3px;
+padding: 3px 6px;
+cursor: pointer;
+}
+
+
+/* 
+#########################################
+            MAILFORM 2COLS 
+#########################################
+*/
+
+form.ddmf2cols {
+text-align: left;
+padding: 10px 0;
+}
+
+form.ddmf2cols fieldset {
+float: left;
+border: 1px solid #999;
+border-radius: 5px;
+padding: 9px 16px;
+margin: 9px 0 16px 0;
+display: block;
+}
+
+form.ddmf2cols legend {
+padding: 0 6px 0 6px;
+margin: 0 0 0 10px;	 
+}
+
+form.ddmf2cols label {
+display: block; 
+float: left; 
+width: 30%; 
+text-align: right;
+margin: 0 10px 0 0; 
+padding-bottom: 0;
+clear: left;  
+}
+
+form.ddmf2cols label.ddmf_textlblwide {
+display: block;  
+float: left; 
+text-align: left;
+margin: 0 10px 0 1px; 
+padding-bottom: 8px; 
+width: 100%;
+}
+
+form.ddmf2cols select.ddmf_select {
+float: left; 
+display: block;
+min-width: 160px; 
+max-width: 56%;
+margin-bottom: 9px;  
+padding: 3px; 
+}
+
+form.ddmf2cols .ddmf_check {
+width: 60%; 
+float: left;
+display: block;  
+margin-bottom: 9px;
+}
+
+form.ddmf2cols .ddmf_checklabel {
+display: inline; 
+float: none; 
+clear: none; 
+text-align: left; 
+margin: 0; 
+padding: 0 0 0 6px;
+}
+
+form.ddmf2cols .ddmf_radio {
+width: 60%;
+float: left;
+display: block;
+margin-bottom: 9px;
+}
+
+form.ddmf2cols .ddmf_radiolabel {
+display: inline; 
+float: none; 
+clear: none; 
+text-align: left; 
+margin: 0; 
+padding: 0 0 0 6px;
+}
+
+form.ddmf2cols .ddmf_check p {
+padding: 0;
+margin: 0 0 5px 0;
+line-height: 140%;
+}
+
+form.ddmf2cols .ddmf_radio p {
+padding: 0;
+margin: 0 0 5px 0;
+line-height: 140%;
+}
+
+form.ddmf2cols textarea {
+float: left; 
+position: relative;
+width: 60%;
+font-family: arial, sans-serif;
+font-size: 15px;
+margin-bottom: 15px;
+padding: 3px;
+}
+
+
+form.ddmf2cols .ddmf_fullblock {
+padding-left: 0px;
+float: left; 
+width: 100%;
+margin-bottom: 13px;
+display: block;
+}
+
+form.ddmf2cols .ddmf_halfblock {
+width: 60%;
+padding-left: 29%;
+margin-bottom: 13px;
+float: left; 
+display: block;
+}
+
+form.ddmf2cols input.ddmf_verify {
+float: left; 
+width: 22%;
+font-family: arial, sans-serif;
+margin-bottom: 15px; 
+padding: 3px 4px;
+position: relative;
+display: block;
+}
+
+form.ddmf2cols img {
+margin: 1px 0 0 10px; 
+float: left;
+}
+
+form.ddmf2cols input.ddmf_file,
+form.ddmf2cols input.ddmf_text {
+float: left; 
+display: block;
+width: 56%;
+font-family: arial, sans-serif;
+margin-bottom: 9px;  
+padding: 1px 4px;
+}
+
+form.ddmf2cols input.ddmf_file {
+width: 96%;
+}
+
+form.ddmf2cols input.ddmf_date {
+float: left; 
+display: block;
+width: 35%;
+font-family: arial, sans-serif;
+margin-bottom: 15px;  
+padding: 1px 3px;
+}
+
+form.ddmf2cols textarea.ddmf_textwide {
+display: block;
+float: left;
+width: 96%;
+height: 200px;
+font-family: arial, sans-serif;
+margin-right: 2px;
+margin-bottom: 15px; 
+padding: 3px;
+}
+
+form.ddmf2cols .credits {
+text-align: right;
+margin-top: 7px;
+width: 97%;
+}
+
+form.ddmf2cols .submitButton {
+text-align: right;
+clear: both; 
+width: 97%;
+}
+
+form.ddmf2cols div.submitButton input {
+background: #ccc url(button.jpg)!important;
+color: #333;
+border: 1px solid #999;
+border-radius: 3px;
+padding: 3px 6px;
+cursor: pointer;
+}
+
+/* 
+#########################################
+              END MAILFORMS
+#########################################
+*/
+
+
+/* BACKEND CSS */
+
+input.mailforms_admin_submit_button {
+background: #ccc url(button.jpg);
+color: #333;
+border: 1px solid #999;
+border-radius: 3px;
+padding: 3px 6px;
+cursor: pointer;
+}
+
+code.ddmfAdminCode {
+background: #fff; 
+color: #555; 
+border: 1px solid #bbb; 
+display: block; 
+max-width: 1300px; 
+padding: 5px 6px; 
+overflow: scroll;
+}
+
+
+/* DATE PICKER */
+
+/* the div that holds the date picker calendar */
+.dpDiv {}
+
+/* the table (within the div) that holds the date picker calendar */
+.dpTable {
+font-family: arial, sans-serif;
+font-size: 14px;
+text-align: center;
+color: #404040;
+background-color: #ccc;
+border: 1px solid #999999;
+}
+
+/* a table row that holds date numbers (either blank or 1-31) */
+.dpTR {
+}
+
+/* the top table row that holds the month, year, and forward/backward buttons */
+.dpTitleTR {}
+
+/* the second table row, that holds the names of days of the week (Mo, Tu, We, etc.) */
+.dpDayTR {}
+
+/* the bottom table row, that has the "This Month" and "Close" buttons */
+.dpTodayButtonTR {}
+
+/* a table cell that holds a date number (either blank or 1-31) */
+.dpTD {
+background: #fff;
+border: 1px solid #999;
+}
+
+/* a table cell that holds a highlighted day (usually either today's date or the current date field value) */
+.dpDayHighlightTD {
+background: #600;
+color: #fff;
+font-weight: bold;
+border: 1px solid #fff;
+}
+
+/* the date number table cell that the mouse pointer is currently over (you can use contrasting colors to make it apparent which cell is being hovered over) */
+.dpTDHover {
+background-color: #888888;
+border: 1px solid #888888;
+cursor: pointer;
+color: #000000;
+}
+
+/* the table cell that holds the name of the month and the year */
+.dpTitleTD {}
+
+/* a table cell that holds one of the forward/backward buttons */
+.dpButtonTD {}
+
+/* the table cell that holds the "This Month" or "Close" button at the bottom */
+.dpTodayButtonTD {}
+
+/* a table cell that holds the names of days of the week (Mo, Tu, We, etc.) */
+.dpDayTD {
+min-width: 24px;
+background-color: #789;
+border: 1px solid #fff;
+color: white;
+}
+
+/* additional style information for the text that indicates the month and year */
+.dpTitleText {
+font-size: 14px;
+color: #555555;
+font-weight: bold;
+}
+
+/* the forward/backward buttons at the top */
+.dpButton {
+font-family: arial, sans-serif;
+font-size: 14px;
+color: #fff;
+background: #356;
+font-weight: 700;
+border: 1px solid #fff;
+cursor: pointer;
+}
+
+/* the "This Month" and "Close" buttons at the bottom */
+.dpTodayButton {
+font-family: arial, sans-serif;
+font-size: 12px;
+color: #fff;
+background: #356;
+font-weight: bold;
+border: 1px solid #fff;
+padding: 2px 4px;
+cursor: pointer;
+}
+
+
+

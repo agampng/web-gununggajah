@@ -1,0 +1,114 @@
+﻿﻿<!DOCTYPE html>
+<head>
+<?php echo head();?>
+<!--[if lt IE 9]>
+	<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+<![endif]-->
+<!--[if IE 9]>
+	<link rel="stylesheet" href="./templates/kidszone/IE.css">
+<![endif]-->
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<?php include $pth['folder']['template'].'xtoc.php'; ?>
+<link rel="shortcut icon" href="<?=$pth['folder']['templateimages']?>favicon.ico">
+<link rel="stylesheet" href="slide/w3.css">
+</head>
+<body id="body" <?php echo onload();?>>
+<!-- utf-8 check: äöüß -->
+<div class="w3-content w3-section" style="max-width:100%">
+	    
+	    
+	     <marquee width="100%" behavior= "scroll" direction= "left" scrollamount= "10"><font color="#00000"><strong>Selamat datang di website kami '<?php echo sitename()?>'</strong></font></marquee>
+
+    <img class="mySlides w3-animate-right" src="userfiles/images/1.jpg?cache=none" style="width:100%">
+  <img class="mySlides w3-animate-left" src="userfiles/images/2.jpg?cache=none" style="width:100%">
+  <img class="mySlides w3-animate-right" src="userfiles/images/3.jpg?cache=none" style="width:100%">
+
+</div>
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 5000);    
+}
+</script>
+
+
+
+
+
+
+
+<div id="menu_hori"><?php echo xtoc(1);?></div>
+ <div style="clear: both;"></div>
+	<div id="navi">
+		<div id="menu">
+        <div id="search"><?php echo searchbox();?><div id="iconmenu"><img src="<?=$pth['folder']['templateimages']?>menu.png" alt="MENU"></div></div>
+        <?php echo xtoc();?></div>
+		 <div style="clear: both;"></div>
+        <div id="menu2">
+		<ul>
+			<li><?php echo printlink();?></li>
+                <li><?php echo sitemaplink();?></li>
+                <li><?php echo mailformlink();?></li>
+		</ul>
+<div style="clear: both;"></div>
+                
+				 <div class="news_left"><?php echo newsbox('News01');?></div>
+		        <div class="lastupdate"><?php echo lastupdate(false);?></div>
+        </div>
+        <div class="langmenu"><?php echo languagemenu();?></div>
+	</div>
+	<div id="content">
+       <div class="content_in">
+            <div id="locator"><?php echo $tx['locator']['text'];?><?php echo locator();?></div>
+	        <?php echo editmenu();?>
+            <?php echo content();?>
+            <div id="submenu"><?php echo submenu();?></div>
+       </div>
+	</div>
+	<div id="boxs">	
+       <div class="news">
+           <?php echo newsbox('News02');?>
+       </div>
+
+       <div class="news">
+            <?php echo newsbox('News03');?>
+       </div>
+	    <div class="news_left2"><?php echo newsbox('News01');?></div>
+          <div style="clear: both;"></div>
+        <div class="block">
+            <div class="blockin">
+                <?php echo Newsbox('News4');?>
+            </div>
+        </div>
+        <div class="block">
+            <div class="blockin">
+                <?php echo Newsbox('News5');?>
+            </div>
+        </div>
+		<div class="block">
+            <div class="blockin">
+                <?php echo Newsbox('News');?>
+            </div>
+        </div>
+	</div>
+	<div id="footer">
+        <div class="footer_in">
+         <div class="button"><?php echo top();?></div><?php echo tag('br');?><?php echo tag('br');?>
+                <div style="clear: both;"></div>
+                    <div class="copyright">Powered by <a target="_blank" href="http://www.cmsimple.org/">CMSimple</a> |
+                    <?php echo loginlink();?></div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

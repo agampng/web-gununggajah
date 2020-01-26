@@ -1,0 +1,14 @@
+
+Notwendige Änderungen nach einem TinyMCE Update 
+
+======================================================
+
+Änderungen: Suchen nach #####
+
+Dateien:
+
+./plugins/tinymce/tinymce/plugins/advlist/plugin.min.js
+./plugins/tinymce/tinymce/plugins/code/plugin.min.js
+./plugins/tinymce/tinymce/plugins/save/plugin.min.js
+./plugins/tinymce/tinymce/skins/cmsimple/skin.min.css
+./plugins/tinymce/tinymce/tinymce.min.js

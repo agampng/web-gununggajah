@@ -1,0 +1,75 @@
+<?php // utf-8 Marker: äöü 
+
+	$plugin_tx['mailforms']['admin_back_to_mailform']="Back to Mailform &raquo;";
+	$plugin_tx['mailforms']['admin_edit_form']="Edit selected Mailform";
+	$plugin_tx['mailforms']['admin_file_saved']="File saved!";
+	$plugin_tx['mailforms']['admin_no_file_selected']="No Mailform selected!";
+	$plugin_tx['mailforms']['admin_select_file']="Select Mailform File";
+	$plugin_tx['mailforms']['admin_selected_file']="Selected File";
+	$plugin_tx['mailforms']['admin_submit_button']="Save File";
+	$plugin_tx['mailforms']['copycode_elements_for_copy']="Mailform Elements for copy";
+	$plugin_tx['mailforms']['copycode_hint_fieldnames']="Take care for unique fieldnames, especially for groups of checkboxes. Each fieldname must exist only once.";
+	$plugin_tx['mailforms']['copycode_label_attach_file']="attach file:";
+	$plugin_tx['mailforms']['copycode_label_checkbox']="group of checkboxes:";
+	$plugin_tx['mailforms']['copycode_label_datepicker']="input field with datepicker:";
+	$plugin_tx['mailforms']['copycode_label_fieldset']="fieldset (open and close):";
+	$plugin_tx['mailforms']['copycode_label_html']="html field:";
+	$plugin_tx['mailforms']['copycode_label_input']="input field:";
+	$plugin_tx['mailforms']['copycode_label_radio']="radio button:";
+	$plugin_tx['mailforms']['copycode_label_recipient']="recipient selectbox:";
+	$plugin_tx['mailforms']['copycode_label_selectbox']="selectbox:";
+	$plugin_tx['mailforms']['copycode_label_selectbox_multi']="selectbox with multiple choice:";
+	$plugin_tx['mailforms']['copycode_label_selectbox_cats']="selectbox with categories:";
+	$plugin_tx['mailforms']['copycode_label_textarea_narrow']="textarea narrow (for 2cols layout):";
+	$plugin_tx['mailforms']['copycode_label_textarea_wide']="textarea wide (for 1col layout):";
+	$plugin_tx['mailforms']['copycode_label_verify']="verify (spam protection):";
+	$plugin_tx['mailforms']['create_button']="create file";
+	$plugin_tx['mailforms']['create_form_already_exists']="already exists.";
+	$plugin_tx['mailforms']['create_form_with_name']="A form named";
+	$plugin_tx['mailforms']['create_headline']="Create New Mailform";
+	$plugin_tx['mailforms']['create_hint1']="If a mailform is selected, a copy of the selected Mailform will be created.";
+	$plugin_tx['mailforms']['create_hint2']="Type in a filename without file extension, use [ A-Z ] [ a-z ] [ 0-9 ] [ _ ] [ - ] only.";
+	$plugin_tx['mailforms']['create_no_form_selected']="No existing mailform is selected as copy template - an empty form will be created.";
+	$plugin_tx['mailforms']['create_no_name']="Please type in a name for the new mailform!";
+	$plugin_tx['mailforms']['create_was_created']="was created and activated.";
+	$plugin_tx['mailforms']['create_wrong_chars']="Forbidden characters in filename.";
+	$plugin_tx['mailforms']['ddfm_submit_button']="Send Email";
+	$plugin_tx['mailforms']['ddfm_credits']="Script by";
+	$plugin_tx['mailforms']['ddfm_confirm_pass']="Confirm";
+	$plugin_tx['mailforms']['ddfm_required_field']="*";
+	$plugin_tx['mailforms']['ddfm_error_msg']="Errors:";
+	$plugin_tx['mailforms']['ddfm_max_char_limit']="character limit reached for";
+	$plugin_tx['mailforms']['ddfm_missing_field']="Missing required field:";
+	$plugin_tx['mailforms']['ddfm_invalid_input']="Invalid input for:";
+	$plugin_tx['mailforms']['ddfm_invalid_email']="Invalid email address for:";
+	$plugin_tx['mailforms']['ddfm_invalid_url']="Invalid URL for:";
+	$plugin_tx['mailforms']['ddfm_no_match']="Fields do not match for:";
+	$plugin_tx['mailforms']['ddfm_missing_ver']="Enter the verification code";
+	$plugin_tx['mailforms']['ddfm_no_ver_gen']="No verification code generated";
+	$plugin_tx['mailforms']['ddfm_invalid_ver']="Invalid verification code";
+	$plugin_tx['mailforms']['ddfm_missing_file']="Missing required file";
+	$plugin_tx['mailforms']['ddfm_file_too_big']="File is too large:";
+	$plugin_tx['mailforms']['ddfm_attached']="File attached";
+	$plugin_tx['mailforms']['ddfm_invalid_ext']="Invalid file type:";
+	$plugin_tx['mailforms']['ddfm_upload_error']="Upload Error:";
+	$plugin_tx['mailforms']['ddfm_server_error']="<p>Error sending message!</p>";
+	$plugin_tx['mailforms']['ddfm_gd_error']="<p>GD not detected! GD is required for the image verification feature.</p>";
+	$plugin_tx['mailforms']['delete_delete_selected_form']="delete selected mailform &raquo;";
+	$plugin_tx['mailforms']['delete_form_in_use']="Hint: This mailform is in use and can not be deleted.";
+	$plugin_tx['mailforms']['delete_really']="Do you really want to delete this mailform?";
+	$plugin_tx['mailforms']['delete_the_form']="The mailform";
+	$plugin_tx['mailforms']['delete_was_deleted']="was deleted.";
+	$plugin_tx['mailforms']['frontend_back_to_form']="Back to Mailform &raquo;";
+	$plugin_tx['mailforms']['frontend_email_sent']="Pesan anda sudah terkirim. Kami akan segera menghubungi anda. Terima kasih";
+	$plugin_tx['mailforms']['menu_main']="Edit Mailforms";
+	$plugin_tx['mailforms']['cf_admin_mail_adress']="The default mail address, if no recipient is defined in the plugin call.";
+	$plugin_tx['mailforms']['cf_admin_textarea_height']="The height of the textarea in the backend (in px).";
+	$plugin_tx['mailforms']['cf_data_path']="The path to the mailform files
+
+default: ./content/plugins/mailforms/";
+	$plugin_tx['mailforms']['cf_replace_cmsimple_mailform']="\"true\" replaces the CMSimple Standard Mailform by the mailform defined in _replaceSMF.txt";
+	$plugin_tx['mailforms']['cf_replace_with_copy_to_sender']="\"true\" sends a copy to the sender.";
+	$plugin_tx['mailforms']['cf_upload_max_filesize']="The maximum filesize for mail attachments (in byte).";
+	$plugin_tx['mailforms']['cf_utf8_marker']="Please do not change.";
+
+?>

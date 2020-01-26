@@ -1,0 +1,571 @@
+/* Torsten Behrens Webtemplatedesign - 2014 */
+
+.responsive body
+{
+   min-width: 240px;
+}
+  
+.responsive img 
+{
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+}  
+  
+.responsive .tbis-content-layout img,
+.responsive .tbis-content-layout video
+{
+   max-width: 100%;
+   height: auto !important;
+}
+
+.responsive.responsive-phone .tbis-content-layout img 
+{
+   margin: 1%;
+}
+
+.responsive.responsive-phone .tbis-collage,
+.responsive.responsive-tablet .tbis-collage {
+   margin: 0 !important;
+}
+
+.responsive .tbis-content-layout .tbis-sidebar0, 
+.responsive .tbis-content-layout .tbis-sidebar1, 
+.responsive .tbis-content-layout .tbis-sidebar2 
+{
+   width: auto !important;
+}
+    
+.responsive .tbis-content-layout, 
+.responsive .tbis-content-layout-row, 
+.responsive .tbis-layout-cell 
+{
+   padding: 0;
+   display: block;
+}
+    
+.responsive .image-caption-wrapper 
+{
+   width: auto;
+}
+
+.responsive.responsive-tablet .tbis-vmenublock,
+.responsive.responsive-tablet .tbis-block
+{
+   margin-left: 1%;
+   margin-right: 1%;
+   width: 48%;
+   float: left;
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+}
+
+.responsive .tbis-responsive-embed 
+{
+   height: 0;
+   padding-bottom: 56.25%;
+   /* 16:9 */
+    position: relative;
+}
+
+.responsive .tbis-responsive-embed iframe,
+.responsive .tbis-responsive-embed object,
+.responsive .tbis-responsive-embed embed
+{
+   height: 100%;
+   left: 0;
+   position: absolute;
+   top: 0;
+   width: 100%;
+}
+
+.responsive .tbis-sheet
+{
+   width: auto !important;
+   min-width: 240px !important;
+   max-width: none !important;
+   margin-right: 1% !important;
+   margin-left: 1% !important;
+   margin-top: 1% !important;
+}
+
+#tbis-resp {
+   display: none;
+}
+
+@media all and (max-width: 999px)
+{
+    #tbis-resp, #tbis-resp-t { display: block; }
+    #tbis-resp-m { display: none; }
+}
+
+@media all and (max-width: 480px)
+{
+    #tbis-resp, #tbis-resp-m { display: block; }
+    #tbis-resp-t { display: none; }
+}
+
+#tbis-resp-desktop {
+   display: none;
+}
+#tbis-resp-tablet-landscape {
+   display: none;
+}
+#tbis-resp-tablet-portrait {
+   display: none;
+}
+#tbis-resp-phone-landscape {
+   display: none;
+}
+#tbis-resp-phone-portrait {
+   display: none;
+}
+
+@media (min-width: 1200px)
+{
+    #tbis-resp-desktop { display: block; }
+}
+
+@media (min-width: 980px) and (max-width: 1199px)
+{
+    #tbis-resp-tablet-landscape { display: block; }
+}
+
+@media (min-width: 768px) and (max-width: 979px)
+{
+    #tbis-resp-tablet-portrait { display: block; }
+}
+
+@media (min-width: 480px) and (max-width: 767px)
+{
+    #tbis-resp-phone-landscape { display: block; }
+}
+
+@media (max-width: 479px)
+{
+    #tbis-resp-phone-portrait { display: block; }
+}
+/* dynamic width nav */
+.responsive nav.tbis-nav,
+.responsive .tbis-nav-inner
+{
+   width: auto !important;
+   position: relative !important;
+   top: auto !important;
+   left: auto !important;
+   right: auto !important;
+   bottom: auto !important;
+   margin-top: 0;
+   margin-bottom: 0;
+   min-width: 0;
+   text-align: right !important;
+}
+
+.responsive nav.tbis-nav
+{
+   min-width: 1%;
+}
+
+.responsive .tbis-nav 
+{
+   padding-left: 0;
+   padding-right: 0;
+}
+
+/* full width hmenu, instead of inline-block */
+.responsive .tbis-nav ul.tbis-hmenu 
+{
+   float: none;
+   text-align: center;
+   display: none;
+}
+
+/* elements on different lines */
+.responsive .tbis-nav ul.tbis-hmenu li,
+.responsive .tbis-hmenu-extra1,
+.responsive .tbis-hmenu-extra2
+{
+   float: none;
+}
+  
+/* horizontal margins */
+.responsive .tbis-nav ul.tbis-hmenu>li:first-child, 
+.responsive .tbis-nav ul.tbis-hmenu>li:last-child, 
+.responsive .tbis-nav ul.tbis-hmenu>li
+{
+   margin-left: 0;
+   margin-right: 0;
+}
+ 
+/* separator */ 
+.responsive .tbis-nav ul.tbis-hmenu>li:before
+{
+   display: none;
+}
+
+/* vertical distance between items */
+.responsive .tbis-nav ul.tbis-hmenu a
+{
+   margin-top: 1px !important;
+   margin-bottom: 1px !important;
+   height: auto;
+   white-space: normal;
+}
+
+.responsive .tbis-nav ul.tbis-hmenu>li:first-child>a
+{
+   margin-top: 0 !important;
+}
+
+.responsive .tbis-nav ul.tbis-hmenu>li:last-child>a
+{
+   margin-bottom: 0 !important;
+}
+
+/* fixes for extended menu */
+.responsive .tbis-nav .ext, 
+.responsive .tbis-nav ul.tbis-hmenu>li>ul, 
+.responsive .tbis-nav ul.tbis-hmenu>li>ul>li,
+.responsive .tbis-nav ul.tbis-hmenu>li>ul>li a
+{
+   width: auto !important;
+}
+
+/* submenu position on hover */
+.responsive .tbis-nav ul.tbis-hmenu ul
+{
+   left: auto !important;
+   right: auto !important;
+   top: auto !important;
+   bottom: auto !important;
+   display: none !important;
+   position: relative !important;
+   visibility: visible !important;
+}
+
+.responsive .tbis-nav ul.tbis-hmenu li.active>ul
+{
+   display: block !important;
+}
+.responsive .tbis-nav ul.tbis-hmenu ul li.active>a
+{
+   font-weight: bold;
+}
+
+.tbis-nav .tbis-menu-btn 
+{
+   border: 1px solid #404040;
+   border-radius: 3px;
+   box-shadow: 0 0 3px 0 rgba(0, 0, 0, .2);
+   display: none;
+   -svg-background: linear-gradient(to bottom, #707070 0, #000 100%);
+   background: -ms-linear-gradient(top, #707070 0, #000 100%);
+   background: -moz-linear-gradient(top, #707070 0, #000 100%);
+   background: -o-linear-gradient(top, #707070 0, #000 100%);
+   background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #707070), color-stop(1, #000));
+   background: -webkit-linear-gradient(top, #707070 0, #000 100%);
+   background: linear-gradient(to bottom, #707070 0, #000 100%);
+   margin: 3px;
+   outline: none;
+   padding: 5px;
+   position: relative;
+   vertical-align: bottom;
+   width: 20px;
+}
+
+.tbis-nav .tbis-menu-btn span 
+{
+   background: #E0E0E0;
+   border-radius: 2px;
+   display: block;
+   height: 3px;
+   margin: 3px 1px;
+   position: relative;
+   -moz-transition: background .2s;
+   -o-transition: background .2s;
+   -webkit-transition: background .2s;
+   transition: background .2s;
+}
+
+.tbis-nav .tbis-menu-btn:hover span
+{
+   background: #f3f3f3;
+}
+
+.responsive .tbis-nav .tbis-menu-btn 
+{
+   display: inline-block;
+}
+
+.responsive .tbis-nav .tbis-hmenu.visible 
+{
+   display: block;
+}
+
+.responsive .tbis-nav ul.tbis-hmenu>li>ul>li:first-child:after 
+{
+   display: none;
+}
+.responsive .tbis-nav ul.tbis-hmenu ul a
+{
+   padding-left: 4% !important;
+}
+.responsive .tbis-nav ul.tbis-hmenu ul ul a
+{
+   padding-left: 6% !important;
+}
+.responsive .tbis-nav ul.tbis-hmenu ul ul ul a
+{
+   padding-left: 8% !important;
+}
+.responsive .tbis-nav ul.tbis-hmenu ul ul ul ul a
+{
+   padding-left: 10% !important;
+}
+.responsive .tbis-nav ul.tbis-hmenu ul ul ul ul ul a
+{
+   padding-left: 12% !important;
+}
+  
+.responsive .tbis-nav ul.tbis-hmenu>li>ul
+{
+   padding: 5px;
+}
+  
+.responsive .tbis-nav ul.tbis-hmenu>li>ul:before
+{
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+}
+
+.responsive .tbis-header 
+{
+   width: auto !important;
+   max-width: none !important;
+   min-height: 100px !important;
+   min-width: 0 !important;
+   text-align: center;
+}
+
+.default-responsive .tbis-header 
+{
+   height: auto;
+}
+
+.default-responsive .tbis-header *
+{
+   position: relative;
+   text-align: center;
+   -webkit-transform: none !important;
+   -moz-transform: none !important;
+   -o-transform: none !important;
+   -ms-transform: none !important;
+   transform: none !important;
+}
+
+.default-responsive .tbis-header .tbis-headline, 
+.default-responsive .tbis-header .tbis-slogan 
+{
+   display: block !important;
+   top: 0 !important;
+   left: 0 !important;
+   margin: 2% !important;
+   text-align: center !important;
+}
+    
+.default-responsive .tbis-header .tbis-headline a, 
+.default-responsive .tbis-header .tbis-slogan 
+{
+   white-space: normal !important;
+}
+
+.default-responsive .tbis-header .tbis-logo
+{
+   display: inline-block;
+   margin: auto !important;
+   left: auto;
+   top: auto !important;
+   width: auto;
+   height: auto;
+}
+
+.responsive .tbis-header .tbis-slidenavigator 
+{
+   position: absolute;
+}
+
+.default-responsive .tbis-header .tbis-positioncontrol 
+{
+   top: auto !important;
+   right: auto !important;
+   bottom: auto !important;
+   left: auto !important;
+   width: auto;
+   height: auto;
+   margin: auto;
+}
+
+.responsive .tbis-header #tbis-flash-area
+{
+   display: none;
+}
+
+/* Search and other elements in header element directly */
+.default-responsive .tbis-header>.tbis-textblock
+{
+   position: relative !important;
+   display: block !important;
+   margin: 1% auto !important;
+   width: 75% !important;
+   top: auto !important;
+   right: auto !important;
+   bottom: auto !important;
+   left: auto !important;
+}
+
+.default-responsive .tbis-header .tbis-textblock 
+{
+   position: relative !important;
+   display: block !important;
+   margin: auto !important;
+   left: 0 !important;
+   right: 0 !important;
+   top: auto !important;
+   height: auto !important;
+   width: auto;
+   background-image: none;
+}
+
+/* '.tbis-header *' used noram align, but for '.tbis-textblock *' we must force align because of preview */
+.responsive .tbis-header .tbis-textblock *
+{
+   text-align: center !important;
+}
+
+.default-responsive .tbis-header .tbis-shapes > .tbis-textblock,
+.default-responsive .tbis-header .tbis-slide-item > .tbis-textblock
+{
+   display: none !important;
+}
+
+.default-responsive .tbis-header .tbis-shapes > .tbis-textblock *
+{
+   text-align: center !important;
+   width: auto !important;
+   height: auto !important;
+   display: block;
+}
+
+.default-responsive .tbis-header .tbis-slider .tbis-textblock *
+{
+   text-align: center !important;
+   width: auto !important;
+   height: auto !important;
+   display: block;
+}
+
+/* For icons like facebook, rss, etc. */
+.responsive .tbis-header>.tbis-textblock>div 
+{
+   width: 100%;
+}
+.responsive .tbis-content-layout, 
+.responsive .tbis-content-layout-row, 
+.responsive .tbis-layout-cell 
+{
+   display: block;
+}
+
+.responsive .tbis-layout-cell 
+{
+   width: auto !important;
+   height: auto !important;
+}
+
+.responsive .tbis-content-layout:after, 
+.responsive .tbis-content-layout-row:after, 
+.responsive .tbis-layout-cell:after 
+{
+   content: ".";
+   display: block;
+   height: 0;
+   clear: both;
+   visibility: hidden;
+}
+
+.responsive ul.tbis-vmenu>li>ul
+{
+   padding: 5px;
+   display: none;
+}
+
+.responsive ul.tbis-vmenu>li>ul:before
+{
+   display: block;
+   position: absolute;
+   content: ' ';
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+}
+
+.responsive ul.tbis-vmenu>li>ul.vmenu-resp-popup-visible 
+{
+   display: block;
+}
+
+.responsive ul.tbis-vmenu ul {
+   position: relative;
+   left: auto;
+   top: auto;
+   visibility: visible;
+}
+
+.responsive ul.tbis-vmenu ul ul a 
+{
+   padding-left: 40px;
+}
+
+.responsive ul.tbis-vmenu ul ul ul a 
+{
+   padding-left: 60px;
+}
+
+.responsive ul.tbis-vmenu ul ul ul ul a 
+{
+   padding-left: 80px;
+}
+
+.responsive ul.tbis-vmenu ul ul ul ul ul a 
+{
+   padding-left: 100px;
+}
+
+.responsive .tbis-post
+{
+   border-radius: 0;
+}
+
+.responsive .tbis-footer-inner
+{
+   min-width: 0;
+}
+
+.responsive .responsive-tablet-layout-cell 
+{
+   width: 50% !important;
+   float: left;
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+}
+
+.responsive .responsive-layout-row-3 .responsive-tablet-layout-cell 
+{
+   width: 33.33% !important;
+}
+

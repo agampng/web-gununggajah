@@ -1,0 +1,5 @@
+type=text|class=ddmf_text|label=Nama anda:|fieldname=ddmf_sender_name|max=250|req=true
+type=text|class=ddmf_text|label=Email:|fieldname=ddmf_sender_email|max=250|req=true|ver=email
+type=text|class=ddmf_text|label=Telefon:|fieldname=ddmf_sender_phone|max=250
+type=widetextarea|class=ddmf_textwide|label=Isi pesan:|fieldname=ddmf_message|max=5000|rows=6|req=true
+type=verify|class=ddmf_verify|label=Isi kode berikut ini

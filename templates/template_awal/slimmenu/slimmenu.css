@@ -1,0 +1,89 @@
+ul.slimmenu span {color: #fff;}
+ul.slimmenu ul, ul.slimmenu li {display: block; float: left;}
+ul.slimmenu li:hover {background: #002828;}
+
+/* 1. Menüebene */
+ul.slimmenu {width: 100%; padding: 0; margin: 0; list-style-type: none;}
+ul.slimmenu li {background: #005353; position:relative; float:left; font-size:14px; line-height: 20px; box-sizing: border-box; padding:0; margin:1px 1px 0 0;}
+
+/* 2. Menüebene */
+ul.slimmenu li ul {position:absolute; background:#234; left: 0; top:100%; z-index:999; display:none; width:100%; padding: 0; margin:0; list-style-type:none; opacity: 0.86;}
+ul.slimmenu li ul li {background: #234; width: 100%; min-height: 32px; font-size:14px; padding: 0; margin: 0;}
+
+/* 3. Menüebene */
+ul.slimmenu li ul li ul {background:#234; position:absolute; left:100%; top:10px; z-index:999; width:100%; min-height: 0; border:1px solid #234; box-sizing:border-box; padding:0; margin:0 0 0 -12px; opacity: 1;}
+ul.slimmenu li ul li ul li {background:#234; width: 100%; padding:0; margin:0;}
+
+
+/* docs and sdocs */
+ul.slimmenu li.docs, ul.slimmenu li.sdocs {box-sizing: border-box; padding-right: 30px; padding-left: 0;}
+ul.slimmenu li ul li.docs, ul.slimmenu li ul li.sdocs {box-sizing: border-box; padding-left: 30px; padding-right: 0;}
+
+/* Links */
+ul.slimmenu a {display:block; min-height: 42px; padding: 8px 10px; color:#404649; text-align: center; font-weight:400; overflow: hidden;}
+ul.slimmenu li ul a {min-height: 5px;}
+ul.slimmenu li a:hover {text-decoration:none;}
+
+
+/* Toggle Buttons ml1 */
+ul.slimmenu li .sub-toggle {position:absolute; right:0; top:0; z-index:998; font-size:24px; padding: 6px 10px 10px 10px; text-align:center; cursor:pointer;}
+ul.slimmenu li .expanded {color: #fc0;}
+
+/* Toggle Buttons ml2 */
+ul.slimmenu li ul li .sub-toggle {position:absolute; right: auto; left:0; top:0; z-index:998; text-align:center; cursor:pointer;}
+ul.slimmenu li ul li .expanded {color: #fc0;}
+
+/* Kennzeichnung der aktiven Seite */
+ul.slimmenu li.sdoc, ul.slimmenu li.sdocs {background: #008A8A;}
+
+
+
+/* Responsive Design (sollte mit dem Wert für resizeWidth: in der Initialisierung in der template.htm übereinstimmen) */
+
+@media (max-width: 959px) {
+ul.slimmenu li:hover {background: transparent;}
+ul.slimmenu li.sdocs, ul.slimmenu li.sdoc {background: transparent;}
+ul.slimmenu a {min-height: 20px;}
+
+/* Expand-Collapse-Button */
+.menu-collapser {height: 38px; position:relative; line-height: 36px; font-size:18px; padding: 2px 0 0 0; margin: 0 auto;}
+.collapse-button {background-color:#345; color:#fff; float: right; padding:4px 9px; cursor:pointer;}
+.collapse-button:hover,.collapse-button:focus {background-color:#061; color:#fff;}
+.collapse-button .icon-bar {background-color:#eee; display:block; height:3px; width:24px; margin:5px 0; font-size: 60px;}
+
+/* 1. Menüebene */
+ul.slimmenu {background: #234; width: 320px; max-width: 92%; float: none; display: table; position:absolute; right: 10px; font-size:15px; line-height: 20px; text-align: left;  border: 5px solid #123; border-top: 0; border-radius: 0 0 5px 5px; padding: 6px 0; margin: 0; z-index: 9999;}
+ul.slimmenu li {background: transparent; display:block; width:100%; min-height: 10px; text-align: left; padding: 2px 0; margin: 0;}
+ul.slimmenu li a {text-align: left;}
+
+/* 2. Menüebene */
+ul.slimmenu li ul {background: #345; position:static; display:none; padding: 6px 0; margin: 0!important;}
+ul.slimmenu li ul li {background: transparent; margin: 0;}
+
+
+/* 3. Menüebene */
+ul.slimmenu li ul li ul {background: #456; position:static; display:none; border:0; padding: 6px 0;}
+ul.slimmenu li ul li ul li {background: transparent; margin: 0;}
+
+
+/* 4. Menüebene */
+ul.slimmenu li ul li ul li ul {background: #567; position:static; display:none; border:0; padding: 6px 0;}
+ul.slimmenu li ul li ul li ul li {background: transparent; margin: 0;}
+
+/* 5. Menüebene */
+ul.slimmenu li ul li ul li ul li ul {background: #678; position:static; display:none; border:0; padding: 6px 0;}
+ul.slimmenu li ul li ul li ul li ul li {background: transparent; margin: 0;}
+
+/* sdoc and sdocs*/
+ul.slimmenu li.docs, ul.slimmenu li.sdocs {box-sizing: border-box; text-align: left; padding-right: 0; padding-left: 0;}
+ul.slimmenu li ul li.docs, ul.slimmenu li ul li.sdocs {box-sizing: border-box; text-align: left; padding-left: 32px; padding-right: 0;}
+ul.slimmenu li.sdocs a, ul.slimmenu li.docs a {padding: 10px 40px 10px 10px!important; margin: 0!important;}
+
+/* Kennzeichnung der aktiven Seite */
+ul.slimmenu li.sdoc a, ul.slimmenu li.sdocs a {color: #fc0!important;}
+ul.slimmenu li.doc a, ul.slimmenu li.docs a {color: #fff!important;}
+
+/* Toggle Buttons */
+ul.slimmenu .sub-toggle {padding: 10px;}
+
+}

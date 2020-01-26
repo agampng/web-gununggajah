@@ -1,0 +1,3380 @@
+/* Torsten Behrens Webtemplatedesign - 2014 */
+
+#tbis-main
+{
+   background: #C7B071;
+   margin:0 auto;
+   font-size: 13px;
+   font-family: Ubuntu, Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   font-weight: normal;
+   font-style: normal;
+   letter-spacing: 1px;
+   position: relative;
+   width: 100%;
+   min-height: 100%;
+   left: 0;
+   top: 0;
+   cursor:default;
+   overflow:hidden;
+}
+table, ul.tbis-hmenu
+{
+   font-size: 13px;
+   font-family: Ubuntu, Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   font-weight: normal;
+   font-style: normal;
+   letter-spacing: 1px;
+}
+
+h1, h2, h3, h4, h5, h6, p, a, ul, ol, li
+{
+   margin: 0;
+   padding: 0;
+}
+
+/* Reset buttons border. It's important for input and button tags. 
+ * border-collapse should be separate for shadow in IE. 
+ */
+.tbis-button
+{
+   border-collapse: separate;
+   -webkit-border-radius: 0;
+   -webkit-background-origin: border !important;
+   -moz-background-origin: border !important;
+   background-origin: border-box !important;
+   background: #FFB433;
+   background: transparent;
+   border:1px solid #332D1F;
+   padding:0 5px;
+   margin:0 auto;
+   height:20px;
+}
+
+.tbis-postcontent,
+.tbis-postheadericons,
+.tbis-postfootericons,
+.tbis-blockcontent,
+ul.tbis-vmenu a 
+{
+   text-align: left;
+}
+
+.tbis-postcontent,
+.tbis-postcontent li,
+.tbis-postcontent table,
+.tbis-postcontent a,
+.tbis-postcontent a:link,
+.tbis-postcontent a:visited,
+.tbis-postcontent a.visited,
+.tbis-postcontent a:hover,
+.tbis-postcontent a.hovered
+{
+   font-family: Ubuntu, Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.tbis-postcontent p
+{
+   margin: 12px 0;
+}
+
+.tbis-postcontent h1, .tbis-postcontent h1 a, .tbis-postcontent h1 a:link, .tbis-postcontent h1 a:visited, .tbis-postcontent h1 a:hover,
+.tbis-postcontent h2, .tbis-postcontent h2 a, .tbis-postcontent h2 a:link, .tbis-postcontent h2 a:visited, .tbis-postcontent h2 a:hover,
+.tbis-postcontent h3, .tbis-postcontent h3 a, .tbis-postcontent h3 a:link, .tbis-postcontent h3 a:visited, .tbis-postcontent h3 a:hover,
+.tbis-postcontent h4, .tbis-postcontent h4 a, .tbis-postcontent h4 a:link, .tbis-postcontent h4 a:visited, .tbis-postcontent h4 a:hover,
+.tbis-postcontent h5, .tbis-postcontent h5 a, .tbis-postcontent h5 a:link, .tbis-postcontent h5 a:visited, .tbis-postcontent h5 a:hover,
+.tbis-postcontent h6, .tbis-postcontent h6 a, .tbis-postcontent h6 a:link, .tbis-postcontent h6 a:visited, .tbis-postcontent h6 a:hover,
+.tbis-blockheader .t, .tbis-blockheader .t a, .tbis-blockheader .t a:link, .tbis-blockheader .t a:visited, .tbis-blockheader .t a:hover,
+.tbis-vmenublockheader .t, .tbis-vmenublockheader .t a, .tbis-vmenublockheader .t a:link, .tbis-vmenublockheader .t a:visited, .tbis-vmenublockheader .t a:hover,
+.tbis-headline, .tbis-headline a, .tbis-headline a:link, .tbis-headline a:visited, .tbis-headline a:hover,
+.tbis-slogan, .tbis-slogan a, .tbis-slogan a:link, .tbis-slogan a:visited, .tbis-slogan a:hover,
+.tbis-postheader, .tbis-postheader a, .tbis-postheader a:link, .tbis-postheader a:visited, .tbis-postheader a:hover
+{
+   font-size: 28px;
+   font-family: Ubuntu, Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   font-weight: normal;
+   font-style: normal;
+   letter-spacing: 2px;
+   line-height: 120%;
+}
+
+.tbis-postcontent a, .tbis-postcontent a:link
+{
+   font-family: Ubuntu, Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   text-decoration: none;
+   color: #EED15E;
+}
+
+.tbis-postcontent a:visited, .tbis-postcontent a.visited
+{
+   font-family: Ubuntu, Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   text-decoration: none;
+   color: #A89971;
+}
+
+.tbis-postcontent  a:hover, .tbis-postcontent a.hover
+{
+   font-family: Ubuntu, Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   text-decoration: underline;
+   color: #C19F15;
+}
+
+.tbis-postcontent h1
+{
+   color: #C19F15;
+   margin: 10px 0 0;
+   font-size: 26px;
+   font-family: Ubuntu, Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   letter-spacing: 2px;
+}
+
+.tbis-blockcontent h1
+{
+   margin: 10px 0 0;
+   font-size: 26px;
+   font-family: Ubuntu, Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   letter-spacing: 2px;
+}
+
+.tbis-postcontent h1 a, .tbis-postcontent h1 a:link, .tbis-postcontent h1 a:hover, .tbis-postcontent h1 a:visited, .tbis-blockcontent h1 a, .tbis-blockcontent h1 a:link, .tbis-blockcontent h1 a:hover, .tbis-blockcontent h1 a:visited 
+{
+   font-size: 26px;
+   font-family: Ubuntu, Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   letter-spacing: 2px;
+}
+
+.tbis-postcontent h2
+{
+   color: #D68800;
+   margin: 10px 0 0;
+   font-size: 22px;
+   font-family: Ubuntu, Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   letter-spacing: 2px;
+}
+
+.tbis-blockcontent h2
+{
+   margin: 10px 0 0;
+   font-size: 22px;
+   font-family: Ubuntu, Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   letter-spacing: 2px;
+}
+
+.tbis-postcontent h2 a, .tbis-postcontent h2 a:link, .tbis-postcontent h2 a:hover, .tbis-postcontent h2 a:visited, .tbis-blockcontent h2 a, .tbis-blockcontent h2 a:link, .tbis-blockcontent h2 a:hover, .tbis-blockcontent h2 a:visited 
+{
+   font-size: 22px;
+   font-family: Ubuntu, Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   letter-spacing: 2px;
+}
+
+.tbis-postcontent h3
+{
+   color: #CFC6B0;
+   margin: 10px 0 0;
+   font-size: 18px;
+   font-family: Ubuntu, Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   letter-spacing: 2px;
+}
+
+.tbis-blockcontent h3
+{
+   margin: 10px 0 0;
+   font-size: 18px;
+   font-family: Ubuntu, Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   letter-spacing: 2px;
+}
+
+.tbis-postcontent h3 a, .tbis-postcontent h3 a:link, .tbis-postcontent h3 a:hover, .tbis-postcontent h3 a:visited, .tbis-blockcontent h3 a, .tbis-blockcontent h3 a:link, .tbis-blockcontent h3 a:hover, .tbis-blockcontent h3 a:visited 
+{
+   font-size: 18px;
+   font-family: Ubuntu, Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   letter-spacing: 2px;
+}
+
+.tbis-postcontent h4
+{
+   color: #FFE5B8;
+   margin: 10px 0 0;
+   font-size: 16px;
+   font-family: Ubuntu, Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   letter-spacing: 2px;
+}
+
+.tbis-blockcontent h4
+{
+   margin: 10px 0 0;
+   font-size: 16px;
+   font-family: Ubuntu, Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   letter-spacing: 2px;
+}
+
+.tbis-postcontent h4 a, .tbis-postcontent h4 a:link, .tbis-postcontent h4 a:hover, .tbis-postcontent h4 a:visited, .tbis-blockcontent h4 a, .tbis-blockcontent h4 a:link, .tbis-blockcontent h4 a:hover, .tbis-blockcontent h4 a:visited 
+{
+   font-size: 16px;
+   font-family: Ubuntu, Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   letter-spacing: 2px;
+}
+
+.tbis-postcontent h5
+{
+   color: #FFE5B8;
+   margin: 10px 0 0;
+   font-size: 14px;
+   font-family: Ubuntu, Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   letter-spacing: 2px;
+}
+
+.tbis-blockcontent h5
+{
+   margin: 10px 0 0;
+   font-size: 14px;
+   font-family: Ubuntu, Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   letter-spacing: 2px;
+}
+
+.tbis-postcontent h5 a, .tbis-postcontent h5 a:link, .tbis-postcontent h5 a:hover, .tbis-postcontent h5 a:visited, .tbis-blockcontent h5 a, .tbis-blockcontent h5 a:link, .tbis-blockcontent h5 a:hover, .tbis-blockcontent h5 a:visited 
+{
+   font-size: 14px;
+   font-family: Ubuntu, Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   letter-spacing: 2px;
+}
+
+.tbis-postcontent h6
+{
+   color: #FFBE4C;
+   margin: 10px 0 0;
+   font-size: 13px;
+   font-family: Ubuntu, Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   letter-spacing: 2px;
+}
+
+.tbis-blockcontent h6
+{
+   margin: 10px 0 0;
+   font-size: 13px;
+   font-family: Ubuntu, Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   letter-spacing: 2px;
+}
+
+.tbis-postcontent h6 a, .tbis-postcontent h6 a:link, .tbis-postcontent h6 a:hover, .tbis-postcontent h6 a:visited, .tbis-blockcontent h6 a, .tbis-blockcontent h6 a:link, .tbis-blockcontent h6 a:hover, .tbis-blockcontent h6 a:visited 
+{
+   font-size: 13px;
+   font-family: Ubuntu, Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   letter-spacing: 2px;
+}
+
+header, footer, article, nav, #tbis-hmenu-bg, .tbis-sheet, .tbis-hmenu a, .tbis-vmenu a, .tbis-slidenavigator > a, .tbis-checkbox:before, .tbis-radiobutton:before
+{
+   -webkit-background-origin: border !important;
+   -moz-background-origin: border !important;
+   background-origin: border-box !important;
+}
+
+header, footer, article, nav, #tbis-hmenu-bg, .tbis-sheet, .tbis-slidenavigator > a, .tbis-checkbox:before, .tbis-radiobutton:before
+{
+   display: block;
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+}
+
+ul
+{
+   list-style-type: none;
+}
+
+ol
+{
+   list-style-position: inside;
+}
+
+html, body
+{
+   height: 100%;
+}
+
+/**
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ * https://github.com/necolas/normalize.css
+ */
+
+html {
+   -ms-text-size-adjust: 100%;
+   /* 2 */
+    -webkit-text-size-adjust: 100%;
+/* 2 */}
+
+body
+{
+   padding: 0;
+   margin:0;
+   min-width: 1000px;
+   color: #B1A481;
+}
+
+.tbis-header:before, #tbis-header-bg:before, .tbis-layout-cell:before, .tbis-layout-wrapper:before, .tbis-footer:before, .tbis-nav:before, #tbis-hmenu-bg:before, .tbis-sheet:before
+{
+   width: 100%;
+   content: " ";
+   display: table;
+}
+.tbis-header:after, #tbis-header-bg:after, .tbis-layout-cell:after, .tbis-layout-wrapper:after, .tbis-footer:after, .tbis-nav:after, #tbis-hmenu-bg:after, .tbis-sheet:after,
+.cleared, .clearfix:after {
+   clear: both;
+   font: 0/0 serif;
+   display: block;
+   content: " ";
+}
+
+form
+{
+   padding: 0 !important;
+   margin: 0 !important;
+}
+
+table.position
+{
+   position: relative;
+   width: 100%;
+   table-layout: fixed;
+}
+
+li h1, .tbis-postcontent li h1, .tbis-blockcontent li h1 
+{
+   margin:1px;
+} 
+li h2, .tbis-postcontent li h2, .tbis-blockcontent li h2 
+{
+   margin:1px;
+} 
+li h3, .tbis-postcontent li h3, .tbis-blockcontent li h3 
+{
+   margin:1px;
+} 
+li h4, .tbis-postcontent li h4, .tbis-blockcontent li h4 
+{
+   margin:1px;
+} 
+li h5, .tbis-postcontent li h5, .tbis-blockcontent li h5 
+{
+   margin:1px;
+} 
+li h6, .tbis-postcontent li h6, .tbis-blockcontent li h6 
+{
+   margin:1px;
+} 
+li p, .tbis-postcontent li p, .tbis-blockcontent li p 
+{
+   margin:1px;
+}
+
+
+.tbis-shapes
+{
+   position: absolute;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   overflow: hidden;
+   z-index: 0;
+}
+
+.tbis-slider-inner {
+   position: relative;
+   overflow: hidden;
+   width: 100%;
+   height: 100%;
+}
+
+.tbis-slidenavigator > a {
+   display: inline-block;
+   vertical-align: middle;
+   outline-style: none;
+   font-size: 1px;
+}
+
+.tbis-slidenavigator > a:last-child {
+   margin-right: 0 !important;
+}
+
+.tbis-object1316593646 h1, 
+.tbis-object1316593646 h2, 
+.tbis-object1316593646 h3, 
+.tbis-object1316593646 h4, 
+.tbis-object1316593646 h5, 
+.tbis-object1316593646 h6, 
+.tbis-object1316593646 p, 
+.tbis-object1316593646 a, 
+.tbis-object1316593646 ul, 
+.tbis-object1316593646 ol, 
+.tbis-object1316593646 li
+{
+  line-height: 125%;
+}
+
+.tbis-object1316593646
+{  
+  position: absolute;
+  top: 200px;
+  left: 0%;
+  margin-left: 0px !important;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+    overflow: hidden;
+      z-index: 2;
+  width: 986px;
+  height: 59px;
+}
+
+.default-responsive .tbis-object1316593646
+{
+  }
+
+.tbis-object1316593646-text-container 
+{
+    display: table;
+}
+
+.tbis-object1316593646-text
+{
+  display: table-cell;
+  outline-style: none;
+  padding: 0px 0px !important;
+  height: 59px;
+  width: 986px;  
+word-wrap: break-word;
+}
+
+.default-responsive .tbis-object1316593646-text 
+{
+    height: auto;
+}
+
+.tbis-object1316593646-text,
+.tbis-object1316593646-text a.tbis-rss-tag-icon,
+.tbis-object1316593646-text a.tbis-facebook-tag-icon,
+.tbis-object1316593646-text a.tbis-twitter-tag-icon,
+.tbis-object1316593646-text a.tbis-tumblr-tag-icon,
+.tbis-object1316593646-text a.tbis-pinterest-tag-icon,
+.tbis-object1316593646-text a.tbis-vimeo-tag-icon,
+.tbis-object1316593646-text a.tbis-youtube-tag-icon,
+.tbis-object1316593646-text a.tbis-linkedin-tag-icon
+{
+font-size: 30px;
+font-family: Verdana, Geneva, Arial, Helvetica, Sans-Serif;
+text-align: center;
+vertical-align: middle;
+line-height: 125%;
+  color: #5F553A !important;
+}
+
+.tbis-object1316593646-text a.tbis-rss-tag-icon,
+.tbis-object1316593646-text a.tbis-facebook-tag-icon,
+.tbis-object1316593646-text a.tbis-twitter-tag-icon,
+.tbis-object1316593646-text a.tbis-tumblr-tag-icon,
+.tbis-object1316593646-text a.tbis-pinterest-tag-icon,
+.tbis-object1316593646-text a.tbis-vimeo-tag-icon,
+.tbis-object1316593646-text a.tbis-youtube-tag-icon,
+.tbis-object1316593646-text a.tbis-linkedin-tag-icon
+{
+    width: 100%;
+}
+
+.default-responsive .tbis-object1316593646-text a.tbis-rss-tag-icon,
+.default-responsive .tbis-object1316593646-text a.tbis-facebook-tag-icon,
+.default-responsive .tbis-object1316593646-text a.tbis-twitter-tag-icon,
+.default-responsive .tbis-object1316593646-text a.tbis-tumblr-tag-icon,
+.default-responsive .tbis-object1316593646-text a.tbis-pinterest-tag-icon,
+.default-responsive .tbis-object1316593646-text a.tbis-vimeo-tag-icon,
+.default-responsive .tbis-object1316593646-text a.tbis-youtube-tag-icon,
+.default-responsive .tbis-object1316593646-text a.tbis-linkedin-tag-icon
+{
+    width: auto;
+}
+
+.tbis-textblock ul > li
+{
+    background-position-y: 8px !important;
+}
+.tbis-object317681815 h1, 
+.tbis-object317681815 h2, 
+.tbis-object317681815 h3, 
+.tbis-object317681815 h4, 
+.tbis-object317681815 h5, 
+.tbis-object317681815 h6, 
+.tbis-object317681815 p, 
+.tbis-object317681815 a, 
+.tbis-object317681815 ul, 
+.tbis-object317681815 ol, 
+.tbis-object317681815 li
+{
+  line-height: 39px;
+}
+
+.tbis-object317681815
+{  
+  position: absolute;
+  top: 22px;
+  left: 90%;
+  margin-left: -225px !important;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+      z-index: 101;
+  width: 250px;
+  height: 39px;
+}
+
+.default-responsive .tbis-object317681815
+{
+  }
+
+
+
+
+
+.tbis-footer .layout-item-0 { margin-bottom: 10px;  }
+.tbis-footer .layout-item-1 { border-right-style:solid;border-right-width:1px;border-right-color:#7B6F4C; padding-right: 10px;padding-left: 10px;  }
+.tbis-footer .layout-item-2 { padding-right: 10px;padding-left: 10px;  }
+.ie7 .tbis-post .tbis-layout-cell {border:none !important; padding:0 !important; }
+.ie6 .tbis-post .tbis-layout-cell {border:none !important; padding:0 !important; }
+
+.tbis-sheet
+{
+   background: #221F16;
+   -webkit-box-shadow:0 0 3px 2px rgba(0, 0, 0, 0.25);
+   -moz-box-shadow:0 0 3px 2px rgba(0, 0, 0, 0.25);
+   box-shadow:0 0 3px 2px rgba(0, 0, 0, 0.25);
+   padding:7px;
+   margin:20px auto 0;
+   position:relative;
+   cursor:auto;
+   width: 1000px;
+   z-index: auto !important;
+}
+
+.tbis-nav
+{
+   background: #313B30;
+   background: -webkit-linear-gradient(top, #333E32 0, #364135 40%, #364135 80%, #1C221C 100%) no-repeat;
+   background: -moz-linear-gradient(top, #333E32 0, #364135 40%, #364135 80%, #1C221C 100%) no-repeat;
+   background: -o-linear-gradient(top, #333E32 0, #364135 40%, #364135 80%, #1C221C 100%) no-repeat;
+   background: -ms-linear-gradient(top, #333E32 0, #364135 40%, #364135 80%, #1C221C 100%) no-repeat;
+   -svg-background: linear-gradient(top, #333E32 0, #364135 40%, #364135 80%, #1C221C 100%) no-repeat;
+   background: linear-gradient(to bottom, #333E32 0, #364135 40%, #364135 80%, #1C221C 100%) no-repeat;
+   border-bottom:1px solid #7B6F4C;
+   margin:0 auto;
+   position: relative;
+   z-index: 499;
+   text-align: right;
+}
+
+ul.tbis-hmenu a, ul.tbis-hmenu a:link, ul.tbis-hmenu a:visited, ul.tbis-hmenu a:hover 
+{
+   outline: none;
+   position: relative;
+   z-index: 11;
+}
+
+ul.tbis-hmenu, ul.tbis-hmenu ul
+{
+   display: block;
+   margin: 0;
+   padding: 0;
+   border: 0;
+   list-style-type: none;
+}
+
+ul.tbis-hmenu li
+{
+   position: relative;
+   z-index: 5;
+   display: block;
+   float: left;
+   background: none;
+   margin: 0;
+   padding: 0;
+   border: 0;
+}
+
+ul.tbis-hmenu li:hover
+{
+   z-index: 10000;
+   white-space: normal;
+}
+
+ul.tbis-hmenu:after, ul.tbis-hmenu ul:after
+{
+   content: ".";
+   height: 0;
+   display: block;
+   visibility: hidden;
+   overflow: hidden;
+   clear: both;
+}
+
+ul.tbis-hmenu, ul.tbis-hmenu ul 
+{
+   min-height: 0;
+}
+
+ul.tbis-hmenu 
+{
+   display: inline-block;
+   vertical-align: bottom;
+}
+
+.tbis-nav:before 
+{
+   content:' ';
+}
+
+.tbis-hmenu-extra1
+{
+   position: relative;
+   display: block;
+   float: left;
+   width: auto;
+   height: auto;
+   background-position: center;
+}
+
+.tbis-hmenu-extra2
+{
+   position: relative;
+   display: block;
+   float: right;
+   width: auto;
+   height: auto;
+   background-position: center;
+}
+
+.tbis-hmenu
+{
+   float: right;
+}
+
+.tbis-menuitemcontainer
+{
+   margin:0 auto;
+}
+ul.tbis-hmenu>li {
+   margin-left: 0;
+}
+ul.tbis-hmenu>li:first-child {
+   margin-left: 0;
+}
+ul.tbis-hmenu>li:last-child, ul.tbis-hmenu>li.last-child {
+   margin-right: 0;
+}
+
+ul.tbis-hmenu>li>a
+{
+   padding:0 35px;
+   margin:0 auto;
+   position: relative;
+   display: block;
+   height: 71px;
+   cursor: pointer;
+   text-decoration: none;
+   color: #DED9C9;
+   line-height: 71px;
+   text-align: center;
+}
+
+.tbis-hmenu>li>a, 
+.tbis-hmenu>li>a:link, 
+.tbis-hmenu>li>a:visited, 
+.tbis-hmenu>li>a.active, 
+.tbis-hmenu>li>a:hover
+{
+   font-size: 16px;
+   font-family: Ubuntu, Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   letter-spacing: 1px;
+   text-transform: uppercase;
+   text-align: left;
+}
+
+ul.tbis-hmenu>li>a.active
+{
+   padding:0 35px;
+   margin:0 auto;
+   color: #FFC561;
+   text-decoration: none;
+}
+
+ul.tbis-hmenu>li>a:visited, 
+ul.tbis-hmenu>li>a:hover, 
+ul.tbis-hmenu>li:hover>a {
+   text-decoration: none;
+}
+
+ul.tbis-hmenu>li>a:hover, .desktop ul.tbis-hmenu>li:hover>a
+{
+   background: #FFA200;
+   background: -webkit-linear-gradient(top, #FFA305 0, #FFA50A 40%, #FFA50A 80%, #FFA200 84%, #D68800 100%) no-repeat;
+   background: -moz-linear-gradient(top, #FFA305 0, #FFA50A 40%, #FFA50A 80%, #FFA200 84%, #D68800 100%) no-repeat;
+   background: -o-linear-gradient(top, #FFA305 0, #FFA50A 40%, #FFA50A 80%, #FFA200 84%, #D68800 100%) no-repeat;
+   background: -ms-linear-gradient(top, #FFA305 0, #FFA50A 40%, #FFA50A 80%, #FFA200 84%, #D68800 100%) no-repeat;
+   -svg-background: linear-gradient(top, #FFA305 0, #FFA50A 40%, #FFA50A 80%, #FFA200 84%, #D68800 100%) no-repeat;
+   background: linear-gradient(to bottom, #FFA305 0, #FFA50A 40%, #FFA50A 80%, #FFA200 84%, #D68800 100%) no-repeat;
+   padding:0 35px;
+   margin:0 auto;
+}
+ul.tbis-hmenu>li>a:hover, 
+.desktop ul.tbis-hmenu>li:hover>a {
+   color: #332D1F;
+   text-decoration: none;
+}
+
+ul.tbis-hmenu li li a
+{
+   background: #49412D;
+   background: transparent;
+   padding:0 22px;
+   margin:0 auto;
+}
+ul.tbis-hmenu li li 
+{
+   float: none;
+   width: auto;
+   margin-top: 5px;
+   margin-bottom: 5px;
+}
+
+.desktop ul.tbis-hmenu li li ul>li:first-child 
+{
+   margin-top: 5px;
+}
+
+ul.tbis-hmenu li li ul>li:last-child 
+{
+   margin-bottom: 0;
+}
+
+.tbis-hmenu ul a
+{
+   display: block;
+   white-space: nowrap;
+   height: 29px;
+   min-width: 7em;
+   border: 0 solid transparent;
+   text-align: left;
+   line-height: 29px;
+   color: #E6E2D6;
+   font-size: 12px;
+   font-family: Ubuntu, Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   text-decoration: none;
+   letter-spacing: 1px;
+   text-transform: none;
+   margin:0;
+}
+
+.tbis-hmenu ul a:link, 
+.tbis-hmenu ul a:visited, 
+.tbis-hmenu ul a.active, 
+.tbis-hmenu ul a:hover
+{
+   text-align: left;
+   line-height: 29px;
+   color: #E6E2D6;
+   font-size: 12px;
+   font-family: Ubuntu, Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   text-decoration: none;
+   letter-spacing: 1px;
+   text-transform: none;
+   margin:0;
+}
+
+.desktop ul.tbis-hmenu>li>ul>li
+{
+   margin-top: 0;
+   margin-bottom: 0;
+}
+
+.desktop .tbis-hmenu>li>ul>li>a
+{
+   font-weight: bold !important;
+}
+.desktop .tbis-hmenu>li>ul>li
+{
+   float: left;
+}
+.desktop .tbis-hmenu>li>ul>li>ul
+{
+   position: relative;
+   left: 0 !important;
+   right: auto !important;
+   padding: 0 !important;
+   margin: 0 !important;
+}
+.desktop .tbis-hmenu>li:hover>ul>li>ul
+{
+   visibility: visible;
+}
+.desktop .tbis-hmenu>li>ul>li>ul:before
+{
+   visibility: hidden;
+}
+
+ul.tbis-hmenu li li:after
+{
+   display: block;
+   position: absolute;
+   content: ' ';
+   height: 0;
+   top: -3px;
+   left: 0;
+   right: 0;
+   z-index: 1;
+   border-bottom: 1px solid #463E2B;
+}
+
+.desktop ul.tbis-hmenu>li>ul>li:after, 
+.desktop ul.tbis-hmenu>li>ul>li:before
+{
+   display: none;
+}
+.desktop ul.tbis-hmenu li li:after
+{
+   left: 5px;
+   right: 5px;
+}
+
+ul.tbis-hmenu ul li a:hover
+{
+   background: #A89971;
+   background: transparent;
+   margin:0 auto;
+}
+.tbis-hmenu ul a:hover
+{
+   text-decoration: underline;
+   color: #AEA07A;
+}
+
+ul.tbis-hmenu ul:before
+{
+   background: #7B6F4C;
+   -webkit-box-shadow:0 0 3px 2px rgba(0, 0, 0, 0.15);
+   -moz-box-shadow:0 0 3px 2px rgba(0, 0, 0, 0.15);
+   box-shadow:0 0 3px 2px rgba(0, 0, 0, 0.15);
+   margin:0 auto;
+   display: block;
+   position: absolute;
+   content: ' ';
+   z-index: 1;
+}
+.desktop ul.tbis-hmenu li:hover>ul {
+   visibility: visible;
+   top: 100%;
+}
+.desktop ul.tbis-hmenu li li:hover>ul {
+   top: 0;
+   left: 100%;
+}
+
+ul.tbis-hmenu ul
+{
+   visibility: hidden;
+   position: absolute;
+   z-index: 10;
+   left: 0;
+   top: 0;
+   background-image: url('images/spacer.gif');
+}
+
+.desktop ul.tbis-hmenu>li>ul
+{
+   padding: 15px 35px 35px 35px;
+   margin: -10px 0 0 -30px;
+}
+
+.desktop ul.tbis-hmenu ul ul
+{
+   padding: 35px 35px 35px 15px;
+   margin: -35px 0 0 -5px;
+}
+
+.desktop ul.tbis-hmenu ul.tbis-hmenu-left-to-right 
+{
+   right: auto;
+   left: 0;
+   margin: -10px 0 0 -30px;
+}
+
+.desktop ul.tbis-hmenu ul.tbis-hmenu-right-to-left 
+{
+   left: auto;
+   right: 0;
+   margin: -10px -30px 0 0;
+}
+
+.desktop ul.tbis-hmenu li li:hover>ul.tbis-hmenu-left-to-right {
+   right: auto;
+   left: 100%;
+}
+.desktop ul.tbis-hmenu li li:hover>ul.tbis-hmenu-right-to-left {
+   left: auto;
+   right: 100%;
+}
+
+.desktop ul.tbis-hmenu ul ul.tbis-hmenu-left-to-right
+{
+   right: auto;
+   left: 0;
+   padding: 35px 35px 35px 15px;
+   margin: -35px 0 0 -5px;
+}
+
+.desktop ul.tbis-hmenu ul ul.tbis-hmenu-right-to-left
+{
+   left: auto;
+   right: 0;
+   padding: 35px 15px 35px 35px;
+   margin: -35px -5px 0 0;
+}
+
+.desktop ul.tbis-hmenu li ul>li:first-child {
+   margin-top: 0;
+}
+.desktop ul.tbis-hmenu li ul>li:last-child {
+   margin-bottom: 0;
+}
+
+.desktop ul.tbis-hmenu ul ul:before
+{
+   border-radius: 0;
+   top: 30px;
+   bottom: 30px;
+   right: 30px;
+   left: 10px;
+}
+
+.desktop ul.tbis-hmenu>li>ul:before
+{
+   top: 10px;
+   right: 30px;
+   bottom: 30px;
+   left: 30px;
+}
+
+.desktop ul.tbis-hmenu>li>ul.tbis-hmenu-left-to-right:before {
+   right: 30px;
+   left: 30px;
+}
+.desktop ul.tbis-hmenu>li>ul.tbis-hmenu-right-to-left:before {
+   right: 30px;
+   left: 30px;
+}
+.desktop ul.tbis-hmenu ul ul.tbis-hmenu-left-to-right:before {
+   right: 30px;
+   left: 10px;
+}
+.desktop ul.tbis-hmenu ul ul.tbis-hmenu-right-to-left:before {
+   right: 10px;
+   left: 30px;
+}
+
+.desktop ul.tbis-hmenu>li.ext>a
+{
+   white-space: nowrap;
+}
+
+.desktop ul.tbis-hmenu>li.ext>a:hover,
+.desktop ul.tbis-hmenu>li.ext:hover>a,
+.desktop ul.tbis-hmenu>li.ext:hover>a.active  
+{
+   background: none;
+   /* default padding + border size */
+  padding: 3px 38px 0 38px;
+   /* margin for shadow */
+  margin: -3px -3px 0 -3px;
+   overflow: hidden;
+   position: relative;
+   border: none;
+   border-radius: 0;
+   box-shadow: none;
+   color: #EFEDE6;
+}
+
+.desktop ul.tbis-hmenu>li.ext>a:hover:before,
+.desktop ul.tbis-hmenu>li.ext:hover>a:before,
+.desktop ul.tbis-hmenu>li.ext:hover>a.active:before  
+{
+   position: absolute;
+   content: ' ';
+   /* top, right, left - for shadow */
+  top: 3px;
+   right: 3px;
+   left: 3px;
+   /* border + shadow */
+  bottom: -3px;
+   background-color: #7B6F4C;
+   border: 0 solid transparent;
+   border-top-left-radius: 0;
+   border-top-right-radius: 0;
+   box-shadow: 0 0 3px rgba(0, 0, 0, 0.8);
+   z-index: -1;
+}
+
+.desktop ul.tbis-hmenu>li.ext:hover>ul 
+{
+   padding-top: 5px;
+   /* menu bar padding */
+  margin-top: 0;
+}
+
+.desktop ul.tbis-hmenu>li.ext:hover>ul:before 
+{
+   /* border + shadow */
+  top: -3px;
+   clip: rect(8px, auto, auto, auto);
+   border-top-left-radius: 0;
+   border-top-right-radius: 0;
+   box-shadow: 0 0 3px rgba(0, 0, 0, 0.8);
+}
+
+ul.tbis-hmenu>li.ext>.ext-r,
+ul.tbis-hmenu>li.ext>.ext-l,
+ul.tbis-hmenu>li.ext>.ext-m,
+ul.tbis-hmenu>li.ext>.ext-off
+{
+   display: none;
+   z-index: 12;
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+}
+
+.desktop ul.tbis-hmenu>li.ext>ul 
+{
+   z-index: 13;
+}
+
+.desktop ul.tbis-hmenu>li.ext.ext-r:hover>.ext-r,
+.desktop ul.tbis-hmenu>li.ext.ext-l:hover>.ext-l
+{
+   position: absolute;
+   display: block;
+   overflow: hidden;
+   /* size of radius 
+   * if size if 0 we should now generate script 
+   * that adds ext-r and ext-m divs
+   */
+  height: 8px;
+   top: 100%;
+   padding-top: 3px;
+   margin-top: -3px;
+/* border width + shadow */}
+
+.desktop ul.tbis-hmenu>li.ext:hover>.ext-r:before,
+.desktop ul.tbis-hmenu>li.ext:hover>.ext-l:before
+{
+   position: absolute;
+   content: ' ';
+   top: 3px;
+   /* border + shadow */
+  bottom: -3px;
+   background-color: #7B6F4C;
+   border: 0 solid transparent;
+   box-shadow: 0 0 3px rgba(0, 0, 0, 0.8);
+}
+
+.desktop ul.tbis-hmenu>li.ext.ext-r:hover>.ext-r
+{
+   left: 100%;
+   right: auto;
+   padding-left: 0;
+   margin-left: 0;
+   padding-right: 3px;
+   margin-right: -3px;
+/* only shadow */}
+
+.desktop ul.tbis-hmenu>li.ext.ext-r:hover>.ext-r:before
+{
+   right: 3px;
+   left: -3px;
+   border-top-left-radius: 0;
+   border-top-right-radius: 0;
+}
+
+.desktop ul.tbis-hmenu>li.ext.ext-l:hover>.ext-l
+{
+   right: 100%;
+   left: auto;
+   padding-right: 0;
+   margin-right: 0;
+   padding-left: 3px;
+   margin-left: -3px;
+/* only shadow */}
+
+.desktop ul.tbis-hmenu>li.ext.ext-l:hover>.ext-l:before
+{
+   right: -3px;
+   left: 3px;
+   border-top-right-radius: 0;
+   border-top-left-radius: 0;
+}
+
+.desktop ul.tbis-hmenu>li.ext:hover>.ext-m, 
+.desktop ul.tbis-hmenu>li.ext:hover>.ext-off 
+{
+   position: absolute;
+   display: block;
+   overflow: hidden;
+   height: 5px;
+   top: 100%;
+}
+
+.desktop ul.tbis-hmenu>li.ext.ext-r:hover>.ext-m 
+{
+   /* shadow offset */
+  left: -3px;
+   right: 0;
+   /* shadow offset */
+  padding-right: 0;
+   padding-left: 3px;
+}
+
+.desktop ul.tbis-hmenu>li.ext:hover>.ext-off 
+{
+   /* shadow offset */
+  left: -3px;
+   right: -3px;
+   /* shadow offset */
+  padding-left: 3px;
+   padding-right: 3px;
+}
+
+.desktop ul.tbis-hmenu>li.ext.ext-l:hover>.ext-m
+{
+   /* shadow offset */
+  right: -3px;
+   left: 0;
+   /* shadow offset */
+  padding-left: 0;
+   padding-right: 3px;
+}
+
+.desktop ul.tbis-hmenu>li.ext.ext-l.ext-r:hover>.ext-m
+{
+   /* shadow offset */
+  right: -3px;
+   left: -3px;
+   /* shadow offset */
+  padding-left: 3px;
+   padding-right: 3px;
+}
+
+.desktop ul.tbis-hmenu>li.ext:hover>.ext-m:before, 
+.desktop ul.tbis-hmenu>li.ext:hover>.ext-off:before 
+{
+   position: absolute;
+   content: ' ';
+   top: -3px;
+   bottom: -3px;
+   /* shadow offset */
+  background-color: #7B6F4C;
+   border: 0 solid transparent;
+   box-shadow: 0 0 3px rgba(0, 0, 0, 0.8);
+}
+
+.desktop ul.tbis-hmenu>li.ext.ext-r:hover>.ext-m:before
+{
+   right: -3px;
+   left: 3px;
+}
+
+.desktop ul.tbis-hmenu>li.ext.ext-l:hover>.ext-m:before
+{
+   left: -3px;
+   right: 3px;
+}
+
+.desktop ul.tbis-hmenu>li.ext.ext-l.ext-r:hover>.ext-m:before
+{
+   left: -3px;
+   right: -3px
+;
+}
+
+.tbis-header
+{
+   margin:0 auto;
+   background-repeat: no-repeat;
+   height: 260px;
+   background-image: url('images/object1316593646.png'), url('images/header.jpg');
+   background-position: 0px 200px, 0 0;
+   position: relative;
+   z-index: auto !important;
+}
+
+.custom-responsive .tbis-header
+{
+   background-image: url('images/object1316593646.png'), url('images/header.jpg');
+   background-position: 0px 200px, 0 0;
+}
+
+.default-responsive .tbis-header,
+.default-responsive #tbis-header-bg
+{
+   background-image: url('images/header.jpg');
+   background-position: center center;
+   background-size: cover;
+}
+
+.tbis-header>.widget 
+{
+   position:absolute;
+   z-index:101;
+}
+
+.tbis-layout-wrapper
+{
+   position: relative;
+   margin: 0 auto 0 auto;
+   z-index: auto !important;
+}
+
+.tbis-content-layout
+{
+   display: table;
+   width: 100%;
+   table-layout: fixed;
+}
+
+.tbis-content-layout-row 
+{
+   display: table-row;
+}
+
+.tbis-layout-cell
+{
+   display: table-cell;
+   vertical-align: top;
+}
+
+/* need only for content layout in post content */ 
+.tbis-postcontent .tbis-content-layout
+{
+   border-collapse: collapse;
+}
+
+.tbis-vmenublock
+{
+   margin:5px;
+}
+div.tbis-vmenublock img
+{
+   margin: 0;
+}
+
+.tbis-vmenublockcontent
+{
+   margin:0 auto;
+}
+
+ul.tbis-vmenu, ul.tbis-vmenu ul
+{
+   list-style: none;
+   display: block;
+}
+
+ul.tbis-vmenu, ul.tbis-vmenu li
+{
+   display: block;
+   margin: 0;
+   padding: 0;
+   width: auto;
+   line-height: 0;
+}
+
+ul.tbis-vmenu
+{
+   margin-top: 0;
+   margin-bottom: 0;
+   position: relative;
+}
+
+ul.tbis-vmenu>li>a
+{
+   background: #131612;
+   background: -webkit-linear-gradient(top, #1F241E 0, #212720 40%, #212720 80%, #050605 100%) no-repeat;
+   background: -moz-linear-gradient(top, #1F241E 0, #212720 40%, #212720 80%, #050605 100%) no-repeat;
+   background: -o-linear-gradient(top, #1F241E 0, #212720 40%, #212720 80%, #050605 100%) no-repeat;
+   background: -ms-linear-gradient(top, #1F241E 0, #212720 40%, #212720 80%, #050605 100%) no-repeat;
+   -svg-background: linear-gradient(top, #1F241E 0, #212720 40%, #212720 80%, #050605 100%) no-repeat;
+   background: linear-gradient(to bottom, #1F241E 0, #212720 40%, #212720 80%, #050605 100%) no-repeat;
+   padding:0 10px;
+   margin:0 auto;
+   font-size: 12px;
+   font-family: Ubuntu, Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   letter-spacing: 1px;
+   color: #A4956A;
+   min-height: 32px;
+   line-height: 32px;
+}
+ul.tbis-vmenu a 
+{
+   display: block;
+   cursor: pointer;
+   z-index: 1;
+   position:relative;
+}
+
+ul.tbis-vmenu ul, ul.tbis-vmenu li{
+   position:relative;
+}
+
+ul.tbis-vmenu>li
+{
+   margin-top: 1px;
+}
+ul.tbis-vmenu>li:first-child
+{
+   margin-top:0;
+}
+
+ul.tbis-vmenu>li>a:hover, ul.tbis-vmenu>li>a.active:hover, ul.tbis-vmenu>li:hover>a, ul.tbis-vmenu>li:hover>a.active
+{
+   background: #D8B217;
+   background: -webkit-linear-gradient(top, #DCB518 0, #E1B919 40%, #E1B919 80%, #B39314 100%) no-repeat;
+   background: -moz-linear-gradient(top, #DCB518 0, #E1B919 40%, #E1B919 80%, #B39314 100%) no-repeat;
+   background: -o-linear-gradient(top, #DCB518 0, #E1B919 40%, #E1B919 80%, #B39314 100%) no-repeat;
+   background: -ms-linear-gradient(top, #DCB518 0, #E1B919 40%, #E1B919 80%, #B39314 100%) no-repeat;
+   -svg-background: linear-gradient(top, #DCB518 0, #E1B919 40%, #E1B919 80%, #B39314 100%) no-repeat;
+   background: linear-gradient(to bottom, #DCB518 0, #E1B919 40%, #E1B919 80%, #B39314 100%) no-repeat;
+   padding:0 10px;
+   margin:0 auto;
+}
+ul.tbis-vmenu>li>a:hover, ul.tbis-vmenu>li>a.active:hover
+{
+   text-decoration: underline;
+}
+
+ul.tbis-vmenu a:hover, ul.tbis-vmenu a.active:hover 
+{
+   color: #3C3106;
+}
+
+ul.tbis-vmenu>li>a.active:hover>span.border-top, ul.tbis-vmenu>li>a.active:hover>span.border-bottom 
+{
+   background-color: transparent;
+}
+
+ul.tbis-vmenu>li:hover>a, ul.tbis-vmenu>li:hover>a.active
+{
+   color: #3C3106;
+}
+
+ul.tbis-vmenu>li>a.active
+{
+   background: #FFA200;
+   background: -webkit-linear-gradient(top, #FFA305 0, #FFA50A 40%, #FFA50A 80%, #FFA200 84%, #D68800 100%) no-repeat;
+   background: -moz-linear-gradient(top, #FFA305 0, #FFA50A 40%, #FFA50A 80%, #FFA200 84%, #D68800 100%) no-repeat;
+   background: -o-linear-gradient(top, #FFA305 0, #FFA50A 40%, #FFA50A 80%, #FFA200 84%, #D68800 100%) no-repeat;
+   background: -ms-linear-gradient(top, #FFA305 0, #FFA50A 40%, #FFA50A 80%, #FFA200 84%, #D68800 100%) no-repeat;
+   -svg-background: linear-gradient(top, #FFA305 0, #FFA50A 40%, #FFA50A 80%, #FFA200 84%, #D68800 100%) no-repeat;
+   background: linear-gradient(to bottom, #FFA305 0, #FFA50A 40%, #FFA50A 80%, #FFA200 84%, #D68800 100%) no-repeat;
+   padding:0 10px;
+   margin:0 auto;
+   text-decoration: underline;
+   color: #422A00;
+}
+
+ul.tbis-vmenu>li:after, ul.tbis-vmenu>li:before{
+   display: block;
+   position: absolute;
+   content: ' ';
+   left: 0;
+   right: 0;
+   top: -1px;
+}
+
+ul.tbis-vmenu>li:after{
+   z-index: 1;
+   height: 0;
+   border-bottom: 1px solid #4F4730;
+}
+
+ul.tbis-vmenu>li:before{
+   z-index: 0;
+   height: 1px;
+   background-color: #131612;
+}
+ul.tbis-vmenu>li:first-child:before, ul.tbis-vmenu>li:first-child:after 
+{
+   display:none;
+}
+
+ul.tbis-vmenu ul:before
+{
+   background: #49412D;
+   border:1px dotted #16140E;
+   margin:0 auto;
+}
+.desktop ul.tbis-vmenu ul
+{
+   padding: 36px 36px 36px 16px;
+   margin: -36px 0 0 -5px;
+}
+
+.desktop ul.tbis-vmenu>li>ul 
+{
+   padding-left: 16px;
+   margin-left: -10px;
+   padding-top: 36px;
+   margin-top: -30px;
+   top: 0;
+}
+
+.desktop ul.tbis-vmenu ul.tbis-vmenu-left-to-right
+{
+   right: auto;
+   left: 0;
+   padding: 36px 36px 36px 16px;
+   margin: -36px 0 0 -5px;
+}
+
+.desktop ul.tbis-vmenu>li>ul.tbis-vmenu-left-to-right 
+{
+   padding-left: 16px;
+   margin-left: -10px;
+   padding-top: 36px;
+   margin-top: -30px;
+}
+
+.desktop ul.tbis-vmenu ul.tbis-vmenu-right-to-left
+{
+   left: auto;
+   right: 0;
+   padding: 36px 16px 36px 36px;
+   margin: -36px -5px 0 0;
+}
+
+.desktop ul.tbis-vmenu>li>ul.tbis-vmenu-right-to-left 
+{
+   padding-right: 16px;
+   margin-right: -10px;
+   padding-top: 36px;
+   margin-top: -30px;
+}
+
+.desktop ul.tbis-vmenu ul:before
+{
+   display: block;
+   position: absolute;
+   content: ' ';
+   z-index: -1;
+   top: 30px;
+   right: 30px;
+   bottom: 30px;
+   left: 10px;
+}
+
+.desktop ul.tbis-vmenu>li>ul:before 
+{
+   top: 30px;
+   right: 30px;
+   bottom: 30px;
+   left: 10px;
+}
+
+.desktop ul.tbis-vmenu ul ul.tbis-vmenu-left-to-right:before 
+{
+   right: 30px;
+   left: 10px;
+}
+
+.desktop ul.tbis-vmenu ul ul.tbis-vmenu-right-to-left:before 
+{
+   right: 10px;
+   left: 30px;
+}
+
+.desktop ul.tbis-vmenu>li>ul.tbis-vmenu-left-to-right:before 
+{
+   right: 30px;
+   left: 10px;
+}
+
+.desktop ul.tbis-vmenu>li>ul.tbis-vmenu-right-to-left:before 
+{
+   right: 10px;
+   left: 30px;
+}
+
+ul.tbis-vmenu li li a
+{
+   background: #231F15;
+   background: -webkit-linear-gradient(top, rgba(38, 34, 23, 0.4) 0, rgba(41, 37, 25, 0.4) 40%, rgba(41, 37, 25, 0.4) 80%, rgba(6, 6, 4, 0.4) 100%) no-repeat;
+   background: -moz-linear-gradient(top, rgba(38, 34, 23, 0.4) 0, rgba(41, 37, 25, 0.4) 40%, rgba(41, 37, 25, 0.4) 80%, rgba(6, 6, 4, 0.4) 100%) no-repeat;
+   background: -o-linear-gradient(top, rgba(38, 34, 23, 0.4) 0, rgba(41, 37, 25, 0.4) 40%, rgba(41, 37, 25, 0.4) 80%, rgba(6, 6, 4, 0.4) 100%) no-repeat;
+   background: -ms-linear-gradient(top, rgba(38, 34, 23, 0.4) 0, rgba(41, 37, 25, 0.4) 40%, rgba(41, 37, 25, 0.4) 80%, rgba(6, 6, 4, 0.4) 100%) no-repeat;
+   -svg-background: linear-gradient(top, rgba(38, 34, 23, 0.4) 0, rgba(41, 37, 25, 0.4) 40%, rgba(41, 37, 25, 0.4) 80%, rgba(6, 6, 4, 0.4) 100%) no-repeat;
+   background: linear-gradient(to bottom, rgba(38, 34, 23, 0.4) 0, rgba(41, 37, 25, 0.4) 40%, rgba(41, 37, 25, 0.4) 80%, rgba(6, 6, 4, 0.4) 100%) no-repeat;
+   margin:0 auto;
+}
+
+ul.tbis-vmenu ul a
+{
+   display: block;
+   position: relative;
+   min-height: 26px;
+   overflow: visible;
+   padding: 0;
+   padding-left: 20px;
+   z-index: 0;
+   line-height: 26px;
+   color: #AC9E77;
+   font-size: 12px;
+   font-family: Ubuntu, Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   letter-spacing: 1px;
+   margin-left: 0;
+   margin-right: 0;
+   padding-right: 20px;
+}
+
+.desktop ul.tbis-vmenu ul a
+{
+   min-width: 7em;
+   white-space: nowrap;
+}
+
+ul.tbis-vmenu ul a:visited, ul.tbis-vmenu ul a.active:hover, ul.tbis-vmenu ul a:hover, ul.tbis-vmenu ul a.active
+{
+   line-height: 26px;
+   color: #AC9E77;
+   font-size: 12px;
+   font-family: Ubuntu, Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   letter-spacing: 1px;
+   margin-left: 0;
+   margin-right: 0;
+}
+
+ul.tbis-vmenu li li
+{
+   position: relative;
+   margin-top: 0;
+}
+
+ul.tbis-vmenu li li:first-child
+{
+   margin-top: 0;
+}
+
+ul.tbis-vmenu li  {
+   position: relative;
+}
+
+ul.tbis-vmenu:after, ul.tbis-vmenu ul:after
+{
+   content: ".";
+   height: 0;
+   display: block;
+   visibility: hidden;
+   overflow: hidden;
+   clear: both;
+}
+ul.tbis-vmenu ul
+{
+   visibility: hidden;
+   position: absolute;
+   z-index: 10;
+   background: none;
+   min-height: 0;
+   background-image: url('images/spacer.gif');
+   /* left to right by default */
+  left: 0;
+   top:0;
+}
+
+.desktop ul.tbis-vmenu li:hover
+{
+   z-index: 10000;
+   white-space: normal;
+}
+.desktop ul.tbis-vmenu li:hover>ul
+{
+   visibility: visible;
+   /* left to right by default */
+  left: 100%;
+}
+
+.desktop ul.tbis-vmenu li:hover>ul.tbis-vmenu-left-to-right
+{
+   right: auto;
+   left: 100%;
+}
+.desktop ul.tbis-vmenu li:hover>ul.tbis-vmenu-right-to-left
+{
+   left: auto;
+   right: 100%;
+}
+ul.tbis-vmenu ul>li+li>a, 
+ul.tbis-vmenu ul>li+li>a:hover, 
+ul.tbis-vmenu ul>li+li>a.active, 
+ul.tbis-vmenu ul>li+li>a:hover.active {
+   border-top: 0;
+}
+
+ul.tbis-vmenu ul>li>a:hover, ul.tbis-vmenu ul>li>a.active:hover, ul.tbis-vmenu ul>li:hover>a
+{
+   background: #FFB433;
+   background: -webkit-linear-gradient(top, rgba(255, 180, 51, 0.4) 0, rgba(255, 182, 56, 0.4) 40%, rgba(255, 182, 56, 0.4) 80%, rgba(255, 163, 5, 0.4) 100%) no-repeat;
+   background: -moz-linear-gradient(top, rgba(255, 180, 51, 0.4) 0, rgba(255, 182, 56, 0.4) 40%, rgba(255, 182, 56, 0.4) 80%, rgba(255, 163, 5, 0.4) 100%) no-repeat;
+   background: -o-linear-gradient(top, rgba(255, 180, 51, 0.4) 0, rgba(255, 182, 56, 0.4) 40%, rgba(255, 182, 56, 0.4) 80%, rgba(255, 163, 5, 0.4) 100%) no-repeat;
+   background: -ms-linear-gradient(top, rgba(255, 180, 51, 0.4) 0, rgba(255, 182, 56, 0.4) 40%, rgba(255, 182, 56, 0.4) 80%, rgba(255, 163, 5, 0.4) 100%) no-repeat;
+   -svg-background: linear-gradient(top, rgba(255, 180, 51, 0.4) 0, rgba(255, 182, 56, 0.4) 40%, rgba(255, 182, 56, 0.4) 80%, rgba(255, 163, 5, 0.4) 100%) no-repeat;
+   background: linear-gradient(to bottom, rgba(255, 180, 51, 0.4) 0, rgba(255, 182, 56, 0.4) 40%, rgba(255, 182, 56, 0.4) 80%, rgba(255, 163, 5, 0.4) 100%) no-repeat;
+   margin:0 auto;
+}
+ul.tbis-vmenu ul li a:hover, ul.tbis-vmenu ul li a.active:hover
+{
+   text-decoration: underline;
+   color: #F6E7AC;
+}
+
+ul.tbis-vmenu ul a:hover:after
+{
+   background-position: center ;
+}
+ul.tbis-vmenu ul a.active:hover:after
+{
+   background-position: center ;
+}
+ul.tbis-vmenu ul a.active:after
+{
+   background-position: bottom ;
+}
+
+ul.tbis-vmenu ul li:hover>a
+{
+   color: #F6E7AC;
+}
+
+ul.tbis-vmenu ul>li>a.active
+{
+   background: #FFA200;
+   background: -webkit-linear-gradient(top, rgba(255, 163, 5, 0.4) 0, rgba(255, 165, 10, 0.4) 40%, rgba(255, 165, 10, 0.4) 80%, rgba(255, 162, 0, 0.4) 84%, rgba(214, 136, 0, 0.4) 100%) no-repeat;
+   background: -moz-linear-gradient(top, rgba(255, 163, 5, 0.4) 0, rgba(255, 165, 10, 0.4) 40%, rgba(255, 165, 10, 0.4) 80%, rgba(255, 162, 0, 0.4) 84%, rgba(214, 136, 0, 0.4) 100%) no-repeat;
+   background: -o-linear-gradient(top, rgba(255, 163, 5, 0.4) 0, rgba(255, 165, 10, 0.4) 40%, rgba(255, 165, 10, 0.4) 80%, rgba(255, 162, 0, 0.4) 84%, rgba(214, 136, 0, 0.4) 100%) no-repeat;
+   background: -ms-linear-gradient(top, rgba(255, 163, 5, 0.4) 0, rgba(255, 165, 10, 0.4) 40%, rgba(255, 165, 10, 0.4) 80%, rgba(255, 162, 0, 0.4) 84%, rgba(214, 136, 0, 0.4) 100%) no-repeat;
+   -svg-background: linear-gradient(top, rgba(255, 163, 5, 0.4) 0, rgba(255, 165, 10, 0.4) 40%, rgba(255, 165, 10, 0.4) 80%, rgba(255, 162, 0, 0.4) 84%, rgba(214, 136, 0, 0.4) 100%) no-repeat;
+   background: linear-gradient(to bottom, rgba(255, 163, 5, 0.4) 0, rgba(255, 165, 10, 0.4) 40%, rgba(255, 165, 10, 0.4) 80%, rgba(255, 162, 0, 0.4) 84%, rgba(214, 136, 0, 0.4) 100%) no-repeat;
+   margin:0 auto;
+}
+ul.tbis-vmenu ul a.active, ul.tbis-vmenu ul a:hover, ul.tbis-vmenu ul a.active:hover
+{
+   text-decoration: none;
+   color: #FFB83D;
+}
+
+.tbis-block
+{
+   border:1px dotted transparent;
+   padding:5px;
+   margin:5px;
+}
+div.tbis-block img
+{
+   border: 1px dotted #7B6F4C;
+   margin: 3px;
+}
+
+.tbis-blockcontent
+{
+   margin:0 auto;
+   color: #CBC2AA;
+   font-size: 12px;
+   font-family: Ubuntu, Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   letter-spacing: 1px;
+}
+.tbis-blockcontent table,
+.tbis-blockcontent li, 
+.tbis-blockcontent a,
+.tbis-blockcontent a:link,
+.tbis-blockcontent a:visited,
+.tbis-blockcontent a:hover
+{
+   color: #CBC2AA;
+   font-size: 12px;
+   font-family: Ubuntu, Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   letter-spacing: 1px;
+}
+
+.tbis-blockcontent p
+{
+   margin: 0 5px;
+}
+
+.tbis-blockcontent a, .tbis-blockcontent a:link
+{
+   color: #E1B918;
+   font-family: Ubuntu, Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.tbis-blockcontent a:visited, .tbis-blockcontent a.visited
+{
+   color: #D0C9B3;
+   font-family: Ubuntu, Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   text-decoration: none;
+}
+
+.tbis-blockcontent a:hover, .tbis-blockcontent a.hover
+{
+   color: #FFC157;
+   font-family: Ubuntu, Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   text-decoration: none;
+}
+.tbis-block ul>li:before
+{
+   content:url('images/blockbullets.png');
+   margin-right:6px;
+   bottom: 2px;
+   position:relative;
+   display:inline-block;
+   vertical-align:middle;
+   font-size:0;
+   line-height:0;
+   margin-left: -9px;
+}
+.opera .tbis-block ul>li:before
+{
+   /* Vertical-align:middle in Opera doesn't need additional offset */
+    bottom: 0;
+}
+
+.tbis-block li
+{
+   font-size: 13px;
+   font-family: Ubuntu, Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   line-height: 125%;
+   color: #D4CDB9;
+   margin: 5px 0 0 10px;
+}
+
+.tbis-block ul>li, .tbis-block ol
+{
+   padding: 0;
+}
+
+.tbis-block ul>li
+{
+   padding-left: 9px;
+}
+
+.tbis-breadcrumbs
+{
+   margin:0 auto;
+}
+
+a.tbis-button,
+a.tbis-button:link,
+a:link.tbis-button:link,
+body a.tbis-button:link,
+a.tbis-button:visited,
+body a.tbis-button:visited,
+input.tbis-button,
+button.tbis-button
+{
+   text-decoration: none;
+   font-size: 13px;
+   font-family: Ubuntu, Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   font-weight: normal;
+   font-style: normal;
+   letter-spacing: 1px;
+   position:relative;
+   display: inline-block;
+   vertical-align: middle;
+   white-space: nowrap;
+   text-align: center;
+   color: #D8D2C0;
+   margin: 0 5px 0 0 !important;
+   overflow: visible;
+   cursor: pointer;
+   text-indent: 0;
+   line-height: 20px;
+   -webkit-box-sizing: content-box;
+   -moz-box-sizing: content-box;
+   box-sizing: content-box;
+}
+
+.tbis-button img
+{
+   margin: 0;
+   vertical-align: middle;
+}
+
+.firefox2 .tbis-button
+{
+   display: block;
+   float: left;
+}
+
+input, select, textarea, a.tbis-search-button span
+{
+   vertical-align: middle;
+   font-size: 13px;
+   font-family: Ubuntu, Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   font-weight: normal;
+   font-style: normal;
+   letter-spacing: 1px;
+}
+
+.tbis-block select 
+{
+   width:96%;
+}
+
+input.tbis-button
+{
+   float: none !important;
+   -webkit-appearance: none;
+}
+
+.tbis-button.active, .tbis-button.active:hover
+{
+   background: #FFB433;
+   background: -webkit-linear-gradient(top, rgba(255, 180, 51, 0.8) 0, rgba(255, 182, 56, 0.8) 40%, rgba(255, 182, 56, 0.8) 80%, rgba(255, 163, 5, 0.8) 100%) no-repeat;
+   background: -moz-linear-gradient(top, rgba(255, 180, 51, 0.8) 0, rgba(255, 182, 56, 0.8) 40%, rgba(255, 182, 56, 0.8) 80%, rgba(255, 163, 5, 0.8) 100%) no-repeat;
+   background: -o-linear-gradient(top, rgba(255, 180, 51, 0.8) 0, rgba(255, 182, 56, 0.8) 40%, rgba(255, 182, 56, 0.8) 80%, rgba(255, 163, 5, 0.8) 100%) no-repeat;
+   background: -ms-linear-gradient(top, rgba(255, 180, 51, 0.8) 0, rgba(255, 182, 56, 0.8) 40%, rgba(255, 182, 56, 0.8) 80%, rgba(255, 163, 5, 0.8) 100%) no-repeat;
+   -svg-background: linear-gradient(top, rgba(255, 180, 51, 0.8) 0, rgba(255, 182, 56, 0.8) 40%, rgba(255, 182, 56, 0.8) 80%, rgba(255, 163, 5, 0.8) 100%) no-repeat;
+   background: linear-gradient(to bottom, rgba(255, 180, 51, 0.8) 0, rgba(255, 182, 56, 0.8) 40%, rgba(255, 182, 56, 0.8) 80%, rgba(255, 163, 5, 0.8) 100%) no-repeat;
+   border:1px solid #95855B;
+   padding:0 5px;
+   margin:0 auto;
+}
+.tbis-button.active, .tbis-button.active:hover {
+   color: #332A05 !important;
+}
+
+.tbis-button.hover, .tbis-button:hover
+{
+   background: #FFA200;
+   background: transparent;
+   border:1px solid #332D1F;
+   padding:0 5px;
+   margin:0 auto;
+}
+.tbis-button.hover, .tbis-button:hover {
+   color: #FFDA99 !important;
+}
+
+input[type="text"], input[type="password"], input[type="email"], input[type="url"], textarea
+{
+   background: #221F16;
+   background: rgba(34, 31, 22, 0.5);
+   border:1px solid #7B6F4C;
+   margin:0 auto;
+}
+input[type="text"], input[type="password"], input[type="email"], input[type="url"], textarea
+{
+   width: 100%;
+   padding: 10px 0;
+   color: #BDB293 !important;
+   font-size: 13px;
+   font-family: Ubuntu, Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   font-weight: normal;
+   font-style: normal;
+   letter-spacing: 1px;
+   text-shadow: none;
+}
+input.tbis-error, textarea.tbis-error
+{
+   background: #221F16;
+   border:1px solid #F5250A;
+   margin:0 auto;
+}
+input.tbis-error, textarea.tbis-error {
+   color: #BBB090 !important;
+   font-size: 13px;
+   font-family: Ubuntu, Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   font-weight: normal;
+   font-style: normal;
+   letter-spacing: 1px;
+}
+form.tbis-search input[type="text"]
+{
+   background: #221F16;
+   background: rgba(34, 31, 22, 0.5);
+   border-radius: 0;
+   border:1px solid #7B6F4C;
+   margin:0 auto;
+   width: 100%;
+   padding: 10px 0;
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+   color: #BDB293 !important;
+   font-size: 13px;
+   font-family: Ubuntu, Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   font-weight: normal;
+   font-style: normal;
+}
+form.tbis-search 
+{
+   background-image: none;
+   border: 0;
+   display:block;
+   position:relative;
+   top:0;
+   padding:0;
+   margin:5px;
+   left:0;
+   line-height: 0;
+}
+
+form.tbis-search input, a.tbis-search-button
+{
+   -webkit-appearance: none;
+   top:0;
+   right:0;
+}
+
+form.tbis-search>input, a.tbis-search-button{
+   bottom:0;
+   left:0;
+   vertical-align: middle;
+}
+
+form.tbis-search input[type="submit"], input.tbis-search-button, a.tbis-search-button
+{
+   border-radius: 0;
+   margin:0 auto;
+}
+form.tbis-search input[type="submit"], input.tbis-search-button, a.tbis-search-button {
+   position:absolute;
+   left:auto;
+   display:block;
+   border:none;
+   background:url('images/searchicon.png') center center no-repeat;
+   width:24px;
+   height: 100%;
+   padding:0;
+   color: #231F15 !important;
+   cursor: pointer;
+}
+
+a.tbis-search-button span.tbis-search-button-text {
+   display: none;
+}
+
+label.tbis-checkbox:before
+{
+   background: #221F16;
+   background: -webkit-linear-gradient(top, #877B5A 0, #0F0E0A 100%) no-repeat;
+   background: -moz-linear-gradient(top, #877B5A 0, #0F0E0A 100%) no-repeat;
+   background: -o-linear-gradient(top, #877B5A 0, #0F0E0A 100%) no-repeat;
+   background: -ms-linear-gradient(top, #877B5A 0, #0F0E0A 100%) no-repeat;
+   -svg-background: linear-gradient(top, #877B5A 0, #0F0E0A 100%) no-repeat;
+   background: linear-gradient(to bottom, #877B5A 0, #0F0E0A 100%) no-repeat;
+   -webkit-border-radius:2px;
+   -moz-border-radius:2px;
+   border-radius:2px;
+   -webkit-box-shadow:0 0 3px 2px rgba(0, 0, 0, 0.4);
+   -moz-box-shadow:0 0 3px 2px rgba(0, 0, 0, 0.4);
+   box-shadow:0 0 3px 2px rgba(0, 0, 0, 0.4);
+   border:1px solid #7B6F4C;
+   margin:0 auto;
+   width:16px;
+   height:16px;
+}
+label.tbis-checkbox
+{
+   cursor: pointer;
+   font-size: 13px;
+   font-family: Ubuntu, Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   font-weight: normal;
+   font-style: normal;
+   line-height: 16px;
+   display: inline-block;
+   color: #BFB497 !important;
+}
+
+.tbis-checkbox>input[type="checkbox"]
+{
+   margin: 0 5px 0 0;
+}
+
+label.tbis-checkbox.active:before
+{
+   background: #7B6F4C;
+   background: -webkit-linear-gradient(top, #B7AB8A 0, #9E8E61 35%, #524A32 100%) no-repeat;
+   background: -moz-linear-gradient(top, #B7AB8A 0, #9E8E61 35%, #524A32 100%) no-repeat;
+   background: -o-linear-gradient(top, #B7AB8A 0, #9E8E61 35%, #524A32 100%) no-repeat;
+   background: -ms-linear-gradient(top, #B7AB8A 0, #9E8E61 35%, #524A32 100%) no-repeat;
+   -svg-background: linear-gradient(top, #B7AB8A 0, #9E8E61 35%, #524A32 100%) no-repeat;
+   background: linear-gradient(to bottom, #B7AB8A 0, #9E8E61 35%, #524A32 100%) no-repeat;
+   -webkit-border-radius:2px;
+   -moz-border-radius:2px;
+   border-radius:2px;
+   -webkit-box-shadow:0 0 3px 2px rgba(0, 0, 0, 0.4);
+   -moz-box-shadow:0 0 3px 2px rgba(0, 0, 0, 0.4);
+   box-shadow:0 0 3px 2px rgba(0, 0, 0, 0.4);
+   border:1px solid #7B6F4C;
+   margin:0 auto;
+   width:16px;
+   height:16px;
+   display: inline-block;
+}
+
+label.tbis-checkbox.hovered:before
+{
+   background: #5F553A;
+   background: -webkit-linear-gradient(top, #AC9E77 0, #9E8E61 18%, #3C3625 100%) no-repeat;
+   background: -moz-linear-gradient(top, #AC9E77 0, #9E8E61 18%, #3C3625 100%) no-repeat;
+   background: -o-linear-gradient(top, #AC9E77 0, #9E8E61 18%, #3C3625 100%) no-repeat;
+   background: -ms-linear-gradient(top, #AC9E77 0, #9E8E61 18%, #3C3625 100%) no-repeat;
+   -svg-background: linear-gradient(top, #AC9E77 0, #9E8E61 18%, #3C3625 100%) no-repeat;
+   background: linear-gradient(to bottom, #AC9E77 0, #9E8E61 18%, #3C3625 100%) no-repeat;
+   -webkit-border-radius:2px;
+   -moz-border-radius:2px;
+   border-radius:2px;
+   -webkit-box-shadow:0 0 3px 2px rgba(0, 0, 0, 0.4);
+   -moz-box-shadow:0 0 3px 2px rgba(0, 0, 0, 0.4);
+   box-shadow:0 0 3px 2px rgba(0, 0, 0, 0.4);
+   border:1px solid #7B6F4C;
+   margin:0 auto;
+   width:16px;
+   height:16px;
+   display: inline-block;
+}
+
+label.tbis-radiobutton:before
+{
+   background: #221F16;
+   background: -webkit-linear-gradient(top, #877B5A 0, #0F0E0A 100%) no-repeat;
+   background: -moz-linear-gradient(top, #877B5A 0, #0F0E0A 100%) no-repeat;
+   background: -o-linear-gradient(top, #877B5A 0, #0F0E0A 100%) no-repeat;
+   background: -ms-linear-gradient(top, #877B5A 0, #0F0E0A 100%) no-repeat;
+   -svg-background: linear-gradient(top, #877B5A 0, #0F0E0A 100%) no-repeat;
+   background: linear-gradient(to bottom, #877B5A 0, #0F0E0A 100%) no-repeat;
+   -webkit-border-radius:8px;
+   -moz-border-radius:8px;
+   border-radius:8px;
+   -webkit-box-shadow:0 0 3px 2px rgba(0, 0, 0, 0.4);
+   -moz-box-shadow:0 0 3px 2px rgba(0, 0, 0, 0.4);
+   box-shadow:0 0 3px 2px rgba(0, 0, 0, 0.4);
+   border:1px solid #7B6F4C;
+   margin:0 auto;
+   width:16px;
+   height:16px;
+}
+label.tbis-radiobutton
+{
+   cursor: pointer;
+   font-size: 13px;
+   font-family: Ubuntu, Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   font-weight: normal;
+   font-style: normal;
+   line-height: 16px;
+   display: inline-block;
+   color: #BFB497 !important;
+}
+
+.tbis-radiobutton>input[type="radio"]
+{
+   vertical-align: baseline;
+   margin: 0 5px 0 0;
+}
+
+label.tbis-radiobutton.active:before
+{
+   background: #7B6F4C;
+   background: -webkit-linear-gradient(top, #B7AB8A 0, #9E8E61 35%, #524A32 100%) no-repeat;
+   background: -moz-linear-gradient(top, #B7AB8A 0, #9E8E61 35%, #524A32 100%) no-repeat;
+   background: -o-linear-gradient(top, #B7AB8A 0, #9E8E61 35%, #524A32 100%) no-repeat;
+   background: -ms-linear-gradient(top, #B7AB8A 0, #9E8E61 35%, #524A32 100%) no-repeat;
+   -svg-background: linear-gradient(top, #B7AB8A 0, #9E8E61 35%, #524A32 100%) no-repeat;
+   background: linear-gradient(to bottom, #B7AB8A 0, #9E8E61 35%, #524A32 100%) no-repeat;
+   -webkit-border-radius:8px;
+   -moz-border-radius:8px;
+   border-radius:8px;
+   -webkit-box-shadow:0 0 3px 2px rgba(0, 0, 0, 0.4);
+   -moz-box-shadow:0 0 3px 2px rgba(0, 0, 0, 0.4);
+   box-shadow:0 0 3px 2px rgba(0, 0, 0, 0.4);
+   border:1px solid #7B6F4C;
+   margin:0 auto;
+   width:16px;
+   height:16px;
+   display: inline-block;
+}
+
+label.tbis-radiobutton.hovered:before
+{
+   background: #5F553A;
+   background: -webkit-linear-gradient(top, #AC9E77 0, #9E8E61 18%, #3C3625 100%) no-repeat;
+   background: -moz-linear-gradient(top, #AC9E77 0, #9E8E61 18%, #3C3625 100%) no-repeat;
+   background: -o-linear-gradient(top, #AC9E77 0, #9E8E61 18%, #3C3625 100%) no-repeat;
+   background: -ms-linear-gradient(top, #AC9E77 0, #9E8E61 18%, #3C3625 100%) no-repeat;
+   -svg-background: linear-gradient(top, #AC9E77 0, #9E8E61 18%, #3C3625 100%) no-repeat;
+   background: linear-gradient(to bottom, #AC9E77 0, #9E8E61 18%, #3C3625 100%) no-repeat;
+   -webkit-border-radius:8px;
+   -moz-border-radius:8px;
+   border-radius:8px;
+   -webkit-box-shadow:0 0 3px 2px rgba(0, 0, 0, 0.4);
+   -moz-box-shadow:0 0 3px 2px rgba(0, 0, 0, 0.4);
+   box-shadow:0 0 3px 2px rgba(0, 0, 0, 0.4);
+   border:1px solid #7B6F4C;
+   margin:0 auto;
+   width:16px;
+   height:16px;
+   display: inline-block;
+}
+
+.tbis-comments
+{
+   margin:0 auto;
+   margin-top: 25px;
+}
+
+.tbis-comments h2
+{
+   color: #B1A481;
+}
+
+.tbis-comment
+{
+   -webkit-border-radius:8px;
+   -moz-border-radius:8px;
+   border-radius:8px;
+   padding:10px;
+   margin:0 auto;
+   margin-top: 6px;
+}
+.tbis-comment-avatar 
+{
+   width:80px;
+   height:80px;
+   padding:1px;
+   background:#fff;
+   border:none;
+   float:right;
+}
+
+.tbis-comment-avatar>img
+{
+   margin:0 !important;
+   border:none !important;
+}
+
+.tbis-comment-content
+{
+   padding:10px 0;
+   color: #B1A481;
+   font-family: Ubuntu, Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.tbis-comment:first-child
+{
+   margin-top: 0;
+}
+
+.tbis-comment-inner
+{
+   margin-left: 0;
+   margin-right: 94px;
+}
+
+.tbis-comment-header
+{
+   color: #B1A481;
+   font-family: Ubuntu, Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.tbis-comment-header a, 
+.tbis-comment-header a:link, 
+.tbis-comment-header a:visited,
+.tbis-comment-header a.visited,
+.tbis-comment-header a:hover,
+.tbis-comment-header a.hovered
+{
+   font-family: Ubuntu, Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.tbis-comment-header a, .tbis-comment-header a:link
+{
+   font-family: Ubuntu, Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   color: #F8EDBF;
+}
+
+.tbis-comment-header a:visited, .tbis-comment-header a.visited
+{
+   font-family: Ubuntu, Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   color: #D8D2C0;
+}
+
+.tbis-comment-header a:hover,  .tbis-comment-header a.hovered
+{
+   font-family: Ubuntu, Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   color: #EFD367;
+}
+
+.tbis-comment-content a, 
+.tbis-comment-content a:link, 
+.tbis-comment-content a:visited,
+.tbis-comment-content a.visited,
+.tbis-comment-content a:hover,
+.tbis-comment-content a.hovered
+{
+   font-family: Ubuntu, Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.tbis-comment-content a, .tbis-comment-content a:link
+{
+   font-family: Ubuntu, Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   color: #F8EDBF;
+}
+
+.tbis-comment-content a:visited, .tbis-comment-content a.visited
+{
+   font-family: Ubuntu, Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   color: #D8D2C0;
+}
+
+.tbis-comment-content a:hover,  .tbis-comment-content a.hovered
+{
+   font-family: Ubuntu, Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   color: #EFD367;
+}
+
+.tbis-pager
+{
+   background: #AEA07A;
+   background: transparent;
+   -webkit-border-radius:6px;
+   -moz-border-radius:6px;
+   border-radius:6px;
+   padding:7px;
+   margin:3px;
+   text-align:left;
+}
+
+.tbis-pager>*:last-child
+{
+   margin-right:0 !important;
+}
+
+.tbis-pager>span {
+   cursor:default;
+}
+
+.tbis-pager>*
+{
+   background: #BDB293;
+   background: transparent;
+   -webkit-border-radius:4px;
+   -moz-border-radius:4px;
+   border-radius:4px;
+   border:1px dotted transparent;
+   padding:10px;
+   margin:0 7px 0 auto;
+   line-height: normal;
+   position:relative;
+   display:inline-block;
+   margin-left: 0;
+}
+
+.tbis-pager a:link,
+.tbis-pager a:visited,
+.tbis-pager .active
+{
+   line-height: normal;
+   font-family: Ubuntu, Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   text-decoration: none;
+   color: #F2DB83
+;
+}
+
+.tbis-pager .active
+{
+   background: #95855B;
+   background: transparent;
+   border:1px dotted transparent;
+   padding:10px;
+   margin:0 7px 0 auto;
+   color: #F2DB83
+;
+}
+
+.tbis-pager .more
+{
+   background: #BDB293;
+   background: transparent;
+   border:1px dotted transparent;
+   margin:0 7px 0 auto;
+}
+.tbis-pager a.more:link,
+.tbis-pager a.more:visited
+{
+   color: #F2DB83
+;
+}
+.tbis-pager a:hover
+{
+   background: #FFB433;
+   border:1px dotted #BDB293;
+   padding:10px;
+   margin:0 7px 0 auto;
+}
+.tbis-pager  a:hover,
+.tbis-pager  a.more:hover
+{
+   color: #201A03
+;
+}
+.tbis-pager>*:after
+{
+   margin:0 0 0 auto;
+   display:inline-block;
+   position:absolute;
+   content: ' ';
+   top:0;
+   width:0;
+   height:100%;
+   border-right:1px solid #95855B;
+   right: -5px;
+   text-decoration:none;
+}
+
+.tbis-pager>*:last-child:after{
+   display:none;
+}
+
+.tbis-commentsform
+{
+   background: #332D1F;
+   background: transparent;
+   -webkit-border-radius:8px;
+   -moz-border-radius:8px;
+   border-radius:8px;
+   border:1px solid #7B6F4C;
+   padding:7px;
+   margin:0 auto;
+   margin-top:25px;
+   color: #B1A481;
+}
+
+.tbis-commentsform h2{
+   padding-bottom:10px;
+   margin: 0;
+   color: #B1A481;
+}
+
+.tbis-commentsform label {
+   display: inline-block;
+   line-height: 25px;
+}
+
+.tbis-commentsform input:not([type=submit]), .tbis-commentsform textarea {
+   box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   width:100%;
+   max-width:100%;
+}
+
+.tbis-commentsform .form-submit
+{
+   margin-top: 20px;
+}
+.tbis-post
+{
+   background: #332D1F;
+   background: rgba(51, 45, 31, 0.6);
+   padding:7px;
+   margin:5px;
+}
+a img
+{
+   border: 0;
+}
+
+.tbis-article img, img.tbis-article, .tbis-block img, .tbis-footer img
+{
+   border: 1px solid #7B6F4C;
+   margin: 7px 7px 7px 7px;
+}
+
+.tbis-metadata-icons img
+{
+   border: none;
+   vertical-align: middle;
+   margin: 2px;
+}
+
+.tbis-article table, table.tbis-article
+{
+   border-collapse: collapse;
+   margin: 1px;
+}
+
+.tbis-post .tbis-content-layout-br
+{
+   height: 0;
+}
+
+.tbis-article th, .tbis-article td
+{
+   padding: 2px;
+   border: dotted 1px #95855B;
+   vertical-align: top;
+   text-align: left;
+}
+
+.tbis-article th
+{
+   text-align: center;
+   vertical-align: middle;
+   padding: 7px;
+}
+
+pre
+{
+   overflow: auto;
+   padding: 0.1em;
+}
+
+.preview-cms-logo
+{
+   border: 0;
+   margin: 1em 1em 0 0;
+   float: left;
+}
+
+.image-caption-wrapper
+{
+   padding: 7px 7px 7px 7px;
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+}
+
+.image-caption-wrapper img
+{
+   margin: 0 !important;
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+}
+
+.image-caption-wrapper div.tbis-collage
+{
+   margin: 0 !important;
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+}
+
+.image-caption-wrapper p
+{
+   font-size: 80%;
+   text-align: right;
+   margin: 0;
+}
+
+.tbis-postmetadataheader
+{
+   background: #49412D;
+   background: rgba(73, 65, 45, 0.7);
+   margin:0 auto;
+   position:relative;
+   z-index:1;
+   padding: 1px;
+}
+
+.tbis-postheadericon:before
+{
+   content:url('images/postheadericon.png');
+   margin-right:6px;
+   bottom: 3px;
+   position:relative;
+   display:inline-block;
+   vertical-align:middle;
+   font-size:0;
+   line-height:0;
+}
+.opera .tbis-postheadericon:before
+{
+   /* Vertical-align:middle in Opera doesn't need additional offset */
+    bottom: 0;
+}
+
+.tbis-postheader
+{
+   color: #C5BBA0;
+   margin: 10px 0;
+   font-size: 26px;
+   font-family: Ubuntu, Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   font-weight: normal;
+   font-style: normal;
+   letter-spacing: 2px;
+}
+
+.tbis-postheader a, 
+.tbis-postheader a:link, 
+.tbis-postheader a:visited,
+.tbis-postheader a.visited,
+.tbis-postheader a:hover,
+.tbis-postheader a.hovered
+{
+   font-size: 26px;
+   font-family: Ubuntu, Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   font-weight: normal;
+   font-style: normal;
+   letter-spacing: 2px;
+}
+
+.tbis-postheader a, .tbis-postheader a:link
+{
+   font-family: Ubuntu, Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   text-decoration: none;
+   text-align: left;
+   color: #E9C430;
+}
+
+.tbis-postheader a:visited, .tbis-postheader a.visited
+{
+   font-family: Ubuntu, Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   text-decoration: none;
+   color: #F4E195;
+}
+
+.tbis-postheader a:hover,  .tbis-postheader a.hovered
+{
+   font-family: Ubuntu, Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   text-decoration: underline;
+   color: #D4AE17;
+}
+
+.tbis-postheadericons,
+.tbis-postheadericons a,
+.tbis-postheadericons a:link,
+.tbis-postheadericons a:visited,
+.tbis-postheadericons a:hover
+{
+   font-size: 11px;
+   font-family: Ubuntu, Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   letter-spacing: 1px;
+   color: #DCD6C6;
+}
+
+.tbis-postheadericons
+{
+   padding: 1px;
+}
+
+.tbis-postheadericons a, .tbis-postheadericons a:link
+{
+   font-family: Ubuntu, Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   text-decoration: none;
+   letter-spacing: 1px;
+   color: #C9C0A6;
+}
+
+.tbis-postheadericons a:visited, .tbis-postheadericons a.visited
+{
+   font-family: Ubuntu, Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   text-decoration: none;
+   letter-spacing: 1px;
+   color: #C9C0A6;
+}
+
+.tbis-postheadericons a:hover, .tbis-postheadericons a.hover
+{
+   font-family: Ubuntu, Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   text-decoration: underline;
+   letter-spacing: 1px;
+   color: #FFA914;
+}
+
+.tbis-postdateicon:before
+{
+   content:url('images/postdateicon.png');
+   margin-right:6px;
+   position:relative;
+   display:inline-block;
+   vertical-align:middle;
+   font-size:0;
+   line-height:0;
+   bottom: auto;
+}
+.opera .tbis-postdateicon:before
+{
+   /* Vertical-align:middle in Opera doesn't need additional offset */
+    bottom: 0;
+}
+
+.tbis-postauthoricon:before
+{
+   content:url('images/postauthoricon.png');
+   margin-right:6px;
+   position:relative;
+   display:inline-block;
+   vertical-align:middle;
+   font-size:0;
+   line-height:0;
+   bottom: auto;
+}
+.opera .tbis-postauthoricon:before
+{
+   /* Vertical-align:middle in Opera doesn't need additional offset */
+    bottom: 0;
+}
+
+.tbis-postpdficon:before
+{
+   content:url('images/postpdficon.png');
+   margin-right:6px;
+   position:relative;
+   display:inline-block;
+   vertical-align:middle;
+   font-size:0;
+   line-height:0;
+   bottom: auto;
+}
+.opera .tbis-postpdficon:before
+{
+   /* Vertical-align:middle in Opera doesn't need additional offset */
+    bottom: 0;
+}
+
+.tbis-postprinticon:before
+{
+   content:url('images/postprinticon.png');
+   margin-right:6px;
+   position:relative;
+   display:inline-block;
+   vertical-align:middle;
+   font-size:0;
+   line-height:0;
+   bottom: auto;
+}
+.opera .tbis-postprinticon:before
+{
+   /* Vertical-align:middle in Opera doesn't need additional offset */
+    bottom: 0;
+}
+
+.tbis-postemailicon:before
+{
+   content:url('images/postemailicon.png');
+   margin-right:6px;
+   bottom: 1px;
+   position:relative;
+   display:inline-block;
+   vertical-align:middle;
+   font-size:0;
+   line-height:0;
+}
+.opera .tbis-postemailicon:before
+{
+   /* Vertical-align:middle in Opera doesn't need additional offset */
+    bottom: 0;
+}
+
+.tbis-postediticon:before
+{
+   content:url('images/postediticon.png');
+   margin-right:6px;
+   position:relative;
+   display:inline-block;
+   vertical-align:middle;
+   font-size:0;
+   line-height:0;
+   bottom: auto;
+}
+.opera .tbis-postediticon:before
+{
+   /* Vertical-align:middle in Opera doesn't need additional offset */
+    bottom: 0;
+}
+
+.tbis-postcontent ul>li:before,  .tbis-post ul>li:before,  .tbis-textblock ul>li:before
+{
+   content:url('images/postbullets.png');
+   margin-right:6px;
+   bottom: 2px;
+   position:relative;
+   display:inline-block;
+   vertical-align:middle;
+   font-size:0;
+   line-height:0;
+}
+.opera .tbis-postcontent ul>li:before, .opera   .tbis-post ul>li:before, .opera   .tbis-textblock ul>li:before
+{
+   /* Vertical-align:middle in Opera doesn't need additional offset */
+    bottom: 0;
+}
+
+.tbis-postcontent li, .tbis-post li, .tbis-textblock li
+{
+   font-family: Ubuntu, Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   color: #BFB497;
+   margin: 5px 0 0 11px;
+}
+
+.tbis-postcontent ul>li, .tbis-post ul>li, .tbis-textblock ul>li, .tbis-postcontent ol, .tbis-post ol, .tbis-textblock ol
+{
+   padding: 0;
+}
+
+.tbis-postcontent ul>li, .tbis-post ul>li, .tbis-textblock ul>li
+{
+   padding-left: 15px;
+}
+
+.tbis-postcontent ul>li:before,  .tbis-post ul>li:before,  .tbis-textblock ul>li:before
+{
+   margin-left: -15px;
+}
+
+.tbis-postcontent ol, .tbis-post ol, .tbis-textblock ol, .tbis-postcontent ul, .tbis-post ul, .tbis-textblock ul
+{
+   margin: 1em 0 1em 11px;
+}
+
+.tbis-postcontent li ol, .tbis-post li ol, .tbis-textblock li ol, .tbis-postcontent li ul, .tbis-post li ul, .tbis-textblock li ul
+{
+   margin: 0.5em 0 0.5em 11px;
+}
+
+.tbis-postcontent li, .tbis-post li, .tbis-textblock li
+{
+   margin: 5px 0 0 0;
+}
+
+.tbis-postcontent ol>li, .tbis-post ol>li, .tbis-textblock ol>li
+{
+   /* overrides overflow for "ul li" and sets the default value */
+  overflow: visible;
+}
+
+.tbis-postcontent ul>li, .tbis-post ul>li, .tbis-textblock ul>li
+{
+   /* makes "ul li" not to align behind the image if they are in the same line */
+  overflow-x: visible;
+   overflow-y: hidden;
+}
+
+blockquote
+{
+   background: #49412D url('images/postquote.png') no-repeat scroll;
+   padding:12px 12px 12px 40px;
+   margin:0 0 0 10px;
+   color: #BFB497;
+   font-family: Ubuntu, Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   font-weight: normal;
+   font-style: italic;
+   /* makes block not to align behind the image if they are in the same line */
+  overflow: auto;
+   clear:both;
+}
+blockquote a, .tbis-postcontent blockquote a, .tbis-blockcontent blockquote a, .tbis-footer blockquote a,
+blockquote a:link, .tbis-postcontent blockquote a:link, .tbis-blockcontent blockquote a:link, .tbis-footer blockquote a:link,
+blockquote a:visited, .tbis-postcontent blockquote a:visited, .tbis-blockcontent blockquote a:visited, .tbis-footer blockquote a:visited,
+blockquote a:hover, .tbis-postcontent blockquote a:hover, .tbis-blockcontent blockquote a:hover, .tbis-footer blockquote a:hover
+{
+   color: #BFB497;
+   font-family: Ubuntu, Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   font-weight: normal;
+   font-style: italic;
+}
+
+/* Override native 'p' margins*/
+blockquote p,
+.tbis-postcontent blockquote p,
+.tbis-blockcontent blockquote p,
+.tbis-footer blockquote p
+{
+   margin: 0;
+}
+
+.Sorter img
+{
+   border:0;
+   vertical-align:middle;
+   padding:0;
+   margin:0;
+   position:static;
+   z-index:1;
+   width: 12px;
+   height: 6px;
+}
+
+.Sorter a
+{
+   position:relative;
+   font-family: Ubuntu, Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   color: #D8D2C0;
+}
+
+.Sorter a:link
+{
+   font-family: Ubuntu, Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   color: #D8D2C0;
+}
+
+.Sorter a:visited, .Sorter a.visited
+{
+   font-family: Ubuntu, Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   color: #D8D2C0;
+}
+
+.Sorter a:hover, .Sorter a.hover
+{
+   font-family: Ubuntu, Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   color: #C5BBA0;
+}
+
+.Sorter
+{
+   font-family: Ubuntu, Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   color:#D8D2C0;
+}
+
+.tbis-footer
+{
+   background: #49412D url('images/footer.png') scroll;
+   background: -webkit-linear-gradient(top, rgba(55, 49, 33, 0.03) 0, rgba(107, 96, 65, 0.05) 90%, rgba(78, 70, 48, 0.02) 90%, rgba(78, 70, 48, 0.02) 100%) no-repeat, url('images/footer.png'), -webkit-linear-gradient(top, rgba(63, 57, 39, 0.3) 0, rgba(98, 88, 60, 0.3) 90%, rgba(79, 71, 48, 0.3) 90%, rgba(79, 71, 48, 0.3) 100%) no-repeat;
+   background: -moz-linear-gradient(top, rgba(55, 49, 33, 0.03) 0, rgba(107, 96, 65, 0.05) 90%, rgba(78, 70, 48, 0.02) 90%, rgba(78, 70, 48, 0.02) 100%) no-repeat, url('images/footer.png'), -moz-linear-gradient(top, rgba(63, 57, 39, 0.3) 0, rgba(98, 88, 60, 0.3) 90%, rgba(79, 71, 48, 0.3) 90%, rgba(79, 71, 48, 0.3) 100%) no-repeat;
+   background: -o-linear-gradient(top, rgba(55, 49, 33, 0.03) 0, rgba(107, 96, 65, 0.05) 90%, rgba(78, 70, 48, 0.02) 90%, rgba(78, 70, 48, 0.02) 100%) no-repeat, url('images/footer.png'), -o-linear-gradient(top, rgba(63, 57, 39, 0.3) 0, rgba(98, 88, 60, 0.3) 90%, rgba(79, 71, 48, 0.3) 90%, rgba(79, 71, 48, 0.3) 100%) no-repeat;
+   background: -ms-linear-gradient(top, rgba(55, 49, 33, 0.03) 0, rgba(107, 96, 65, 0.05) 90%, rgba(78, 70, 48, 0.02) 90%, rgba(78, 70, 48, 0.02) 100%) no-repeat, url('images/footer.png'), -ms-linear-gradient(top, rgba(63, 57, 39, 0.3) 0, rgba(98, 88, 60, 0.3) 90%, rgba(79, 71, 48, 0.3) 90%, rgba(79, 71, 48, 0.3) 100%) no-repeat;
+   -svg-background: linear-gradient(top, rgba(55, 49, 33, 0.03) 0, rgba(107, 96, 65, 0.05) 90%, rgba(78, 70, 48, 0.02) 90%, rgba(78, 70, 48, 0.02) 100%) no-repeat, url('images/footer.png'), linear-gradient(top, rgba(63, 57, 39, 0.3) 0, rgba(98, 88, 60, 0.3) 90%, rgba(79, 71, 48, 0.3) 90%, rgba(79, 71, 48, 0.3) 100%) no-repeat;
+   background: linear-gradient(to bottom, rgba(55, 49, 33, 0.03) 0, rgba(107, 96, 65, 0.05) 90%, rgba(78, 70, 48, 0.02) 90%, rgba(78, 70, 48, 0.02) 100%) no-repeat, url('images/footer.png'), linear-gradient(to bottom, rgba(63, 57, 39, 0.3) 0, rgba(98, 88, 60, 0.3) 90%, rgba(79, 71, 48, 0.3) 90%, rgba(79, 71, 48, 0.3) 100%) no-repeat;
+   border-top:1px solid #7B6F4C;
+   padding:10px;
+   margin:0 auto;
+   position: relative;
+   color: #CBC2AA;
+   font-size: 11px;
+   font-family: Ubuntu, Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   letter-spacing: 1px;
+   text-align: left;
+}
+
+.tbis-footer a,
+.tbis-footer a:link,
+.tbis-footer a:visited,
+.tbis-footer a:hover,
+.tbis-footer td, 
+.tbis-footer th,
+.tbis-footer caption
+{
+   color: #CBC2AA;
+   font-size: 11px;
+   font-family: Ubuntu, Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   letter-spacing: 1px;
+}
+
+.tbis-footer p 
+{
+   padding:0;
+   text-align: left;
+}
+
+.tbis-footer a,
+.tbis-footer a:link
+{
+   color: #CFAA16;
+   font-family: Ubuntu, Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   text-decoration: none;
+   letter-spacing: 1px;
+}
+
+.tbis-footer a:visited
+{
+   color: #BBB090;
+   font-family: Ubuntu, Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   text-decoration: none;
+   letter-spacing: 1px;
+}
+
+.tbis-footer a:hover
+{
+   color: #EED15E;
+   font-family: Ubuntu, Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   text-decoration: underline;
+   letter-spacing: 1px;
+}
+
+.tbis-footer h1
+{
+   color: #6E5B0C;
+   font-family: Ubuntu, Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.tbis-footer h2
+{
+   color: #8F5A00;
+   font-family: Ubuntu, Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.tbis-footer h3
+{
+   color: #A89971;
+   font-family: Ubuntu, Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.tbis-footer h4
+{
+   color: #FFB433;
+   font-family: Ubuntu, Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.tbis-footer h5
+{
+   color: #FFB433;
+   font-family: Ubuntu, Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.tbis-footer h6
+{
+   color: #FFB433;
+   font-family: Ubuntu, Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.tbis-footer img
+{
+   border: none;
+   margin: 5px;
+}
+
+.tbis-rss-tag-icon
+{
+   background:  url('images/footerrssicon.png') no-repeat scroll;
+   margin:0 auto;
+   min-height:32px;
+   min-width:32px;
+   display: inline-block;
+   text-indent: 35px;
+   background-position: left center;
+   vertical-align: middle;
+}
+
+.tbis-rss-tag-icon:empty
+{
+   vertical-align: middle;
+}
+
+.tbis-facebook-tag-icon
+{
+   background:  url('images/footerfacebookicon.png') no-repeat scroll;
+   margin:0 auto;
+   min-height:32px;
+   min-width:32px;
+   display: inline-block;
+   text-indent: 35px;
+   background-position: left center;
+   vertical-align: middle;
+}
+
+.tbis-facebook-tag-icon:empty
+{
+   vertical-align: middle;
+}
+
+.tbis-twitter-tag-icon
+{
+   background:  url('images/footertwittericon.png') no-repeat scroll;
+   margin:0 auto;
+   min-height:32px;
+   min-width:32px;
+   display: inline-block;
+   text-indent: 35px;
+   background-position: left center;
+   vertical-align: middle;
+}
+
+.tbis-twitter-tag-icon:empty
+{
+   vertical-align: middle;
+}
+
+.tbis-tumblr-tag-icon
+{
+   background:  url('images/tumblricon.png') no-repeat scroll;
+   margin:0 auto;
+   min-height:32px;
+   min-width:32px;
+   display: inline-block;
+   text-indent: 35px;
+   background-position: left center;
+   vertical-align: middle;
+}
+
+.tbis-tumblr-tag-icon:empty
+{
+   vertical-align: middle;
+}
+
+.tbis-pinterest-tag-icon
+{
+   background:  url('images/pinteresticon.png') no-repeat scroll;
+   margin:0 auto;
+   min-height:32px;
+   min-width:32px;
+   display: inline-block;
+   text-indent: 35px;
+   background-position: left center;
+   vertical-align: middle;
+}
+
+.tbis-pinterest-tag-icon:empty
+{
+   vertical-align: middle;
+}
+
+.tbis-vimeo-tag-icon
+{
+   background:  url('images/vimeoicon.png') no-repeat scroll;
+   margin:0 auto;
+   min-height:33px;
+   min-width:32px;
+   display: inline-block;
+   text-indent: 35px;
+   background-position: left center;
+   vertical-align: middle;
+}
+
+.tbis-vimeo-tag-icon:empty
+{
+   vertical-align: middle;
+}
+
+.tbis-youtube-tag-icon
+{
+   background:  url('images/youtubeicon.png') no-repeat scroll;
+   margin:0 auto;
+   min-height:32px;
+   min-width:32px;
+   display: inline-block;
+   text-indent: 35px;
+   background-position: left center;
+   vertical-align: middle;
+}
+
+.tbis-youtube-tag-icon:empty
+{
+   vertical-align: middle;
+}
+
+.tbis-linkedin-tag-icon
+{
+   background:  url('images/linkedinicon.png') no-repeat scroll;
+   margin:0 auto;
+   min-height:32px;
+   min-width:32px;
+   display: inline-block;
+   text-indent: 35px;
+   background-position: left center;
+   vertical-align: middle;
+}
+
+.tbis-linkedin-tag-icon:empty
+{
+   vertical-align: middle;
+}
+
+.tbis-footer ul>li:before
+{
+   content:url('images/footerbullets.png');
+   margin-right:6px;
+   bottom: 2px;
+   position:relative;
+   display:inline-block;
+   vertical-align:middle;
+   font-size:0;
+   line-height:0;
+   margin-left: -15px;
+}
+.opera .tbis-footer ul>li:before
+{
+   /* Vertical-align:middle in Opera doesn't need additional offset */
+    bottom: 0;
+}
+
+.tbis-footer li
+{
+   font-size: 13px;
+   font-family: Ubuntu, Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   letter-spacing: 1px;
+   line-height: 125%;
+   color: #CBC2AA;
+   margin: 5px 0 0 13px;
+}
+
+.tbis-footer ul>li, .tbis-footer ol
+{
+   padding: 0;
+}
+
+.tbis-footer ul>li
+{
+   padding-left: 15px;
+}
+
+.tbis-page-footer, 
+.tbis-page-footer a,
+.tbis-page-footer a:link,
+.tbis-page-footer a:visited,
+.tbis-page-footer a:hover
+{
+   font-family: Arial;
+   font-size: 10px;
+   letter-spacing: normal;
+   word-spacing: normal;
+   font-style: normal;
+   font-weight: normal;
+   text-decoration: underline;
+   color: #4D3000;
+}
+
+.tbis-page-footer
+{
+   position: relative;
+   z-index: auto !important;
+   padding: 1em;
+   text-align: center !important;
+   text-decoration: none;
+   color: #2F2B1D;
+}
+
+.tbis-lightbox-wrapper 
+{
+   background: #333;
+   background: rgba(0, 0, 0, .8);
+   bottom: 0;
+   left: 0;
+   padding: 0 100px;
+   position: fixed;
+   right: 0;
+   text-align: center;
+   top: 0;
+   z-index: 1000000;
+}
+
+.tbis-lightbox,
+.tbis-lightbox-wrapper .tbis-lightbox-image
+{
+   cursor: pointer;
+}
+
+.tbis-lightbox-wrapper .tbis-lightbox-image
+{
+   border: 6px solid #fff;
+   border-radius: 3px;
+   display: none;
+   max-width: 100%;
+   vertical-align: middle;
+}
+
+.tbis-lightbox-wrapper .tbis-lightbox-image.active
+{
+   display: inline-block;
+}
+
+.tbis-lightbox-wrapper .lightbox-error
+{
+   background: #fff;
+   border: 1px solid #b4b4b4;
+   border-radius: 10px;
+   box-shadow: 0 2px 5px #333;
+   height: 80px;
+   opacity: .95;
+   padding: 20px;
+   position: fixed;
+   width: 300px;
+   z-index: 100;
+}
+
+.tbis-lightbox-wrapper .loading
+{
+   background: #fff url('images/preloader-01.gif') center center no-repeat;
+   border: 1px solid #b4b4b4;
+   border-radius: 10px;
+   box-shadow: 0 2px 5px #333;
+   height: 32px;
+   opacity: .5;
+   padding: 10px;
+   position: fixed;
+   width: 32px;
+   z-index: 10100;
+}
+
+.tbis-lightbox-wrapper .arrow
+{
+   cursor: pointer;
+   height: 100px;
+   opacity: .5;
+   filter: alpha(opacity=50);
+   position: fixed;
+   width: 82px;
+   z-index: 10003;
+}
+
+.tbis-lightbox-wrapper .arrow.left
+{
+   left: 9px;
+}
+
+.tbis-lightbox-wrapper .arrow.right
+{
+   right: 9px;
+}
+
+.tbis-lightbox-wrapper .arrow:hover
+{
+   opacity: 1;
+   filter: alpha(opacity=100);
+}
+
+.tbis-lightbox-wrapper .arrow.disabled 
+{
+   display: none;
+}
+
+.tbis-lightbox-wrapper .arrow-t, 
+.tbis-lightbox-wrapper .arrow-b
+{
+   background-color: #fff;
+   border-radius: 3px;
+   height: 6px;
+   left: 26px;
+   position: relative;
+   width: 30px;
+}
+
+.tbis-lightbox-wrapper .arrow-t
+{
+   top: 38px;
+}
+
+.tbis-lightbox-wrapper .arrow-b
+{
+   top: 50px;
+}
+
+.tbis-lightbox-wrapper .close
+{
+   cursor: pointer;
+   height: 22px;
+   opacity: .5;
+   filter: alpha(opacity=50);
+   position: fixed;
+   right: 39px;
+   top: 30px;
+   width: 22px;
+   z-index: 10003;
+}
+
+.tbis-lightbox-wrapper .close:hover 
+{
+   opacity: 1;
+   filter: alpha(opacity=100);
+}
+
+.tbis-lightbox-wrapper .close .cw, 
+.tbis-lightbox-wrapper .close .ccw
+{
+   background-color: #fff;
+   border-radius: 3px;
+   height: 6px;
+   position: absolute;
+   left: -4px;
+   top: 8px;
+   width: 30px;
+}
+
+.tbis-lightbox-wrapper .cw
+{
+   transform: rotate(45deg);
+   -ms-transform: rotate(45deg);
+   /* IE 9 */
+    -webkit-transform: rotate(45deg);
+   /* Safari and Chrome */
+    -o-transform: rotate(45deg);
+   /* Opera */
+    -moz-transform: rotate(45deg);
+/* Firefox */}
+
+.tbis-lightbox-wrapper .ccw
+{
+   transform: rotate(-45deg);
+   -ms-transform: rotate(-45deg);
+   /* IE 9 */
+    -webkit-transform: rotate(-45deg);
+   /* Safari and Chrome */
+    -o-transform: rotate(-45deg);
+   /* Opera */
+    -moz-transform: rotate(-45deg);
+/* Firefox */}
+
+.tbis-lightbox-wrapper .close-alt, 
+.tbis-lightbox-wrapper .arrow-right-alt, 
+.tbis-lightbox-wrapper .arrow-left-alt 
+{
+   color: #fff;
+   display: none;
+   font-size: 2.5em;
+   line-height: 100%;
+}
+
+.ie8 .tbis-lightbox-wrapper .close-alt, 
+.ie8 .tbis-lightbox-wrapper .arrow-right-alt, 
+.ie8 .tbis-lightbox-wrapper .arrow-left-alt 
+{
+   display: block;
+}
+
+.ie8 .tbis-lightbox-wrapper .cw, 
+.ie8 .tbis-lightbox-wrapper .ccw 
+{
+   display: none;
+}
+
+.tbis-content-layout .tbis-sidebar1
+{
+   background: #49412D;
+   border-right:1px solid #7B6F4C;
+   margin:0 auto;
+   width: 200px;
+}
+
+.tbis-content-layout .tbis-content
+{
+   margin:0 auto;
+}
+
+.tbis-content-layout .tbis-sidebar2
+{
+   background: #49412D;
+   border-left:1px solid #7B6F4C;
+   margin:0 auto;
+   width: 200px;
+}
+
+/* Begin Additional CSS Styles */
+
+/* End Additional CSS Styles */
